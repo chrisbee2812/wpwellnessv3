@@ -181,7 +181,7 @@ export default function Home() {
         {/* Call to Action Section */}
         <section className="py-12 md:py-16 bg-muted">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-headline font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl text-primary font-headline font-bold mb-4">
               Ready to Glow?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
