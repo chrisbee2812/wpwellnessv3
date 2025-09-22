@@ -1,0 +1,76 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A bare shouldered woman with hair tied back in a bun head turned smiling out of the screen.",
+      "imageUrl": "/hero-background.webp",
+      "imageHint": "smilling woman"
+    },
+    {
+      "id": "about-mission",
+      "description": "Natural ingredients like flower petals and oils arranged beautifully.",
+      "imageUrl": "https://picsum.photos/seed/mission/800/600",
+      "imageHint": "natural ingredients"
+    },
+    {
+      "id": "service-face-1",
+      "description": "A close-up of a person receiving a gentle facial treatment.",
+      "imageUrl": "https://picsum.photos/seed/face1/600/400",
+      "imageHint": "facial treatment"
+    },
+    {
+      "id": "service-face-2",
+      "description": "A woman with clear, glowing skin smiling.",
+      "imageUrl": "https://picsum.photos/seed/face2/600/400",
+      "imageHint": "glowing skin"
+    },
+    {
+      "id": "service-face-3",
+      "description": "Skincare products arranged on a clean, white background.",
+      "imageUrl": "https://picsum.photos/seed/face3/600/400",
+      "imageHint": "skincare products"
+    },
+    {
+      "id": "service-body-1",
+      "description": "A person relaxing during a body treatment.",
+      "imageUrl": "https://picsum.photos/seed/body1/600/400",
+      "imageHint": "body treatment"
+    },
+    {
+      "id": "service-body-2",
+      "description": "Smooth stones and a towel on a massage table.",
+      "imageUrl": "https://picsum.photos/seed/body2/600/400",
+      "imageHint": "massage table"
+    },
+    {
+      "id": "service-wellness-1",
+      "description": "Aromatherapy diffuser with essential oil bottles.",
+      "imageUrl": "https://picsum.photos/seed/wellness1/600/400",
+      "imageHint": "aromatherapy"
+    },
+    {
+      "id": "service-wellness-2",
+      "description": "Hot stones arranged on a person's back.",
+      "imageUrl": "https://picsum.photos/seed/wellness2/600/400",
+      "imageHint": "hot stones"
+    },
+    {
+      "id": "team-member-1",
+      "description": "A professional and friendly-looking woman.",
+      "imageUrl": "https://picsum.photos/seed/team1/400/400",
+      "imageHint": "professional woman"
+    },
+    {
+      "id": "team-member-2",
+      "description": "A professional and friendly-looking man.",
+      "imageUrl": "https://picsum.photos/seed/team2/400/400",
+      "imageHint": "professional man"
+    },
+    {
+      "id": "team-member-3",
+      "description": "A professional and friendly-looking woman with a warm smile.",
+      "imageUrl": "https://picsum.photos/seed/team3/400/400",
+      "imageHint": "smiling woman"
+    }
+  ]
+}
