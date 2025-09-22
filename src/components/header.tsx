@@ -51,7 +51,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 w-full z-50">
-      <div className="flex gap-8 h-8 w-full bg-primary pl-8 text-secondary">
+      <div className="gap-8 h-8 w-full bg-primary text-sm pl-8 text-secondary hidden lg:flex">
         <div className="flex items-center gap-2">
           <div className="bg-primary">
               <Phone className="h-6 w-6" />
