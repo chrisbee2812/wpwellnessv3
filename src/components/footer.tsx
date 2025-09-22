@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Sparkles, Twitter, Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
@@ -8,8 +9,15 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center space-x-2">
-              <Sparkles className="h-6 w-6 text-primary" />
-              <span className="font-bold font-headline text-lg">LumiSkin</span>
+              <Link href="/" className="flex items-center space-x-2">
+                <Image
+                  src="/logo.png"
+                  alt="West Park Wellness Studio Logo"
+                  width={100}
+                  height={69}
+                  className="h-22 w-32 pt-2"
+                />
+            </Link>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">Your journey to radiant beauty.</p>
           </div>
@@ -33,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} LumiSkin. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} West Park Wellness Studio. All rights reserved.</p>
         </div>
       </div>
     </footer>
