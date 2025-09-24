@@ -215,7 +215,7 @@ export const featuredCategories: FeaturedCategory[] = [
         'From rejuvenating Botox treatments to the subtle perfection of fillers, our services are designed to enhance your natural beauty and restore a youthful radiance. Dive into the world of micro-needling, injections, and nourishing vitamins that harmonize to unveil a canvas of timeless elegance.'
     ],
     imageId: 'modern-aesthetics',
-    link: '/services?category=Mobile'
+    link: '/services?category=Aesthetics'
   },
   {
     id: 'fc2',
@@ -228,7 +228,7 @@ export const featuredCategories: FeaturedCategory[] = [
         'Ideal for those feeling overwhelmed, anxious, creatively blocked, or seeking a deep inner reset.'
     ],
     imageId: 'pandora-light-therapy',
-    link: '/services?category=Aesthetics'
+    link: '/services?category=Wellness'
   },
   {
     id: 'fc3',
@@ -241,7 +241,7 @@ export const featuredCategories: FeaturedCategory[] = [
         'Ideal for those experiencing tinitus or other hearing difficulties, discomfort, or seeking routine ear care.'
     ],
     imageId: 'earwax-removal',
-    link: '/services?category=Face'
+    link: '/services?category=Mobile'
   },
   {
     id: 'fc4',
@@ -254,6 +254,6 @@ export const featuredCategories: FeaturedCategory[] = [
         'Following the scan, targeted meta-therapy can be applied to help support energetic balance and stimulate the body’s natural self-healing processes.'
     ],
     imageId: 'oberon-biofeedback',
-    link: '/services?category=Face'
+    link: '/services?category=Wellness'
   }
 ];

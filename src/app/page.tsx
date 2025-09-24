@@ -138,7 +138,7 @@ export default function Home() {
                   As well as relaxing in our calming and luxurious space, our mobile service for some of our treatments means we come to you.
                 </p>
                 <Button asChild variant="link" className="p-0 h-auto justify-start mt-4 text-primary">
-                  <Link href="/services">At Home Services <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                  <Link href="/services?category=Mobile">At Home Services <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
               </div>
             </div>
