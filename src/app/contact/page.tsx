@@ -17,7 +17,7 @@ export default function ContactPage() {
       </div>
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-headline font-bold">Get In Touch</h1>
+          <h1 className="text-4xl md:text-5xl text-primary font-headline font-bold">Get In Touch</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             We're here to answer any questions you may have. Reach out to us and we'll respond as soon as we can.
           </p>
@@ -25,13 +25,13 @@ export default function ContactPage() {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <div className="space-y-8">
-             <h2 className="text-2xl font-headline font-bold">Contact Information</h2>
+             <h2 className="text-2xl text-primary font-headline font-bold">Contact Information</h2>
              <div className="flex items-center gap-4">
                 <div className="bg-primary/20 p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                    <h3 className="font-semibold">Our Location</h3>
+                    <h3 className="font-semibold text-primary">Our Location</h3>
                     <p className="text-muted-foreground">72 Latchmere View, Leeds LS16 5DT</p>
                 </div>
              </div>
@@ -40,8 +40,8 @@ export default function ContactPage() {
                     <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                    <h3 className="font-semibold">Email Us</h3>
-                    <p className="text-muted-foreground">hello@lumiskin.com</p>
+                    <h3 className="font-semibold text-primary">Email Us</h3>
+                    <p className="text-muted-foreground">info@westparkwellnessstudio.co.uk</p>
                 </div>
              </div>
              <div className="flex items-center gap-4">
@@ -49,8 +49,8 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                    <h3 className="font-semibold">Call Us</h3>
-                    <p className="text-muted-foreground">(123) 456-7890</p>
+                    <h3 className="font-semibold text-primary">Call Us</h3>
+                    <p className="text-muted-foreground">07706 424469</p>
                 </div>
              </div>
           </div>

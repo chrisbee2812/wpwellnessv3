@@ -9,7 +9,6 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center space-x-2">
-              <Link href="/" className="flex items-center space-x-2">
                 <Image
                   src="/logo.png"
                   alt="West Park Wellness Studio Logo"
@@ -17,7 +16,6 @@ const Footer = () => {
                   height={69}
                   className="h-22 w-32 pt-2"
                 />
-            </Link>
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">Your journey to radiant beauty.</p>
           </div>

@@ -57,7 +57,7 @@ export default function ContactForm() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="font-headline text-2xl">Send us a Message</CardTitle>
+        <CardTitle className="font-headline text-primary text-2xl">Send us a Message</CardTitle>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -67,7 +67,7 @@ export default function ContactForm() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Full Name</FormLabel>
+                  <FormLabel className="text-primary font-bold">Full Name</FormLabel>
                   <FormControl>
                     <Input placeholder="Jane Doe" {...field} />
                   </FormControl>
@@ -80,7 +80,7 @@ export default function ContactForm() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email Address</FormLabel>
+                  <FormLabel className="text-primary font-bold">Email Address</FormLabel>
                   <FormControl>
                     <Input placeholder="jane.doe@example.com" {...field} />
                   </FormControl>
@@ -93,7 +93,7 @@ export default function ContactForm() {
               name="subject"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Subject</FormLabel>
+                  <FormLabel className="text-primary font-bold">Subject</FormLabel>
                   <FormControl>
                     <Input placeholder="Question about a service" {...field} />
                   </FormControl>
@@ -106,7 +106,7 @@ export default function ContactForm() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message</FormLabel>
+                  <FormLabel className="text-primary font-bold">Message</FormLabel>
                   <FormControl>
                     <textarea
                       className="flex min-h-[120px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"

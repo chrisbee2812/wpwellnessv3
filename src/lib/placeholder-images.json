@@ -7,34 +7,47 @@
       "imageHint": "smilling woman"
     },
     {
+      "id": "services-hero",
+      "description": "A happily in thought.",
+      "imageUrl": "/staff-hero-bkg.webp",
+      "imageHint": "smilling woman"
+    },
+    {
+      "id": "staff-hero",
+      "description": "A happily in thought.",
+      "imageUrl": "/services-hero-bkg.webp",
+      "imageHint": "smilling woman"
+    },
+    {
       "id": "about-mission",
       "description": "Natural ingredients like flower petals and oils arranged beautifully.",
       "imageUrl": "https://picsum.photos/seed/mission/800/600",
       "imageHint": "natural ingredients"
     },
     {
-      "id": "service-face-1",
+      "id": "modern-aesthetics",
       "description": "A close-up of a person receiving a gentle facial treatment.",
-      "imageUrl": "https://picsum.photos/seed/face1/600/400",
+      "imageUrl": "/modern-aesthetics.webp",
       "imageHint": "facial treatment"
     },
     {
-      "id": "service-face-2",
-      "description": "A woman with clear, glowing skin smiling.",
-      "imageUrl": "https://picsum.photos/seed/face2/600/400",
-      "imageHint": "glowing skin"
+      "id": "pandora-light-therapy",
+      "description": "A woman lying, eyes closed, under light therapy equipment emitting a soft glow.",
+      "imageUrl": "/pandoralight.webp",
+      "altImageUrl": "/pandoralight-long.webp",
+      "imageHint": "pandora light therapy"
     },
     {
-      "id": "service-face-3",
-      "description": "Skincare products arranged on a clean, white background.",
-      "imageUrl": "https://picsum.photos/seed/face3/600/400",
-      "imageHint": "skincare products"
+      "id": "earwax-removal",
+      "description": "Ear under lighting having wax removed with specialized tool.",
+      "imageUrl": "/earwax-removal.webp",
+      "imageHint": "earwax removal"
     },
     {
-      "id": "service-body-1",
-      "description": "A person relaxing during a body treatment.",
-      "imageUrl": "https://picsum.photos/seed/body1/600/400",
-      "imageHint": "body treatment"
+      "id": "oberon-biofeedback",
+      "description": "The Oberon Biofeedback equipment.",
+      "imageUrl": "/oberon-biofeedback.webp",
+      "imageHint": "Oberon Biofeedback"
     },
     {
       "id": "service-body-2",
@@ -55,6 +68,18 @@
       "imageHint": "hot stones"
     },
     {
+      "id": "service-aesthetics-1",
+      "description": "A close-up of a syringe with a blurred background of a clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1608326389417-d3f9cc46de04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb3NtZXRpYyUyMGluamVjdGlvbnxlbnwwfHx8fDE3NTg3MjQ5MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cosmetic injection"
+    },
+    {
+      "id": "service-aesthetics-2",
+      "description": "A woman's face with markings for dermal filler injections.",
+      "imageUrl": "https://images.unsplash.com/photo-1697649125798-3eba8abc933f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYWNpYWwlMjBmaWxsZXJzfGVufDB8fHx8MTc1ODcyNDkwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "facial fillers"
+    },
+    {
       "id": "team-member-1",
       "description": "A professional and friendly-looking woman.",
       "imageUrl": "https://picsum.photos/seed/team1/400/400",
@@ -71,6 +96,24 @@
       "description": "A professional and friendly-looking woman with a warm smile.",
       "imageUrl": "https://picsum.photos/seed/team3/400/400",
       "imageHint": "smiling woman"
+    },
+    {
+      "id": "featured-category-mobile",
+      "description": "A therapist providing a treatment in a comfortable home setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1748369830019-5fa54b0ecb3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aG9tZSUyMHRyZWF0bWVudHxlbnwwfHx8fDE3NTg3MjQ5MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "home treatment"
+    },
+    {
+      "id": "featured-category-aesthetics",
+      "description": "A sophisticated and clinical setting for aesthetic treatments.",
+      "imageUrl": "https://images.unsplash.com/photo-1665231795856-769fb08a90bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGluaWMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTg3MjA3MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic interior"
+    },
+    {
+      "id": "featured-category-facials",
+      "description": "A woman with a serene expression receiving a facial.",
+      "imageUrl": "https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZXJlbmUlMjBmYWNpYWx8ZW58MHx8fHwxNzU4NzI0OTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "serene facial"
     }
   ]
 }

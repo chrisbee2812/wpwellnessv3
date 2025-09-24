@@ -3,6 +3,9 @@ import { Separator } from '@/components/ui/separator';
 import { services, serviceCategories } from '@/lib/data';
 
 export default function PricingPage() {
+  // Exclude 'Mobile' from categories to be displayed as sections, as it's a filter not a category with unique services
+  const displayCategories = serviceCategories.filter(c => c !== 'Mobile');
+
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
@@ -15,7 +18,7 @@ export default function PricingPage() {
 
         <Card className="max-w-4xl mx-auto">
           <CardContent className="p-6 md:p-8">
-            {serviceCategories.map((category, index) => (
+            {displayCategories.map((category, index) => (
               <div key={category} className={index > 0 ? 'mt-10' : ''}>
                 <h2 className="text-2xl md:text-3xl font-headline font-bold text-primary mb-6">{category} Treatments</h2>
                 <div className="space-y-4">

@@ -6,25 +6,33 @@ import Link from 'next/link';
 import { ArrowRight, Gem, Leaf, ShieldCheck, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { serviceOverviews, getImageById, ServiceOverview } from '@/lib/data';
+import { services, getImageById, Service, featuredCategories, FeaturedCategory } from '@/lib/data';
 import ServiceDetailsDialog from '@/components/service-details-dialog';
+import CategoryDetailsDialog from '@/components/category-details-dialog';
 
 export default function Home() {
-  const featuredServices = serviceOverviews;
   const heroImage = getImageById('hero');
 
-  const [selectedService, setSelectedService] = useState<ServiceOverview | null>(null);
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
+  const [isServiceDialogOpen, setIsServiceDialogOpen] = useState(false);
 
-  const handleCardClick = (service: ServiceOverview) => {
-    setSelectedService(service);
-    setIsDialogOpen(true);
-  };
+  const [selectedCategory, setSelectedCategory] = useState<FeaturedCategory | null>(null);
+  const [isCategoryDialogOpen, setIsCategoryDialogOpen] = useState(false);
 
-  const handleDialogClose = () => {
-    setIsDialogOpen(false);
+  const handleServiceDialogClose = () => {
+    setIsServiceDialogOpen(false);
     setSelectedService(null);
   }
+  
+  const handleCategoryCardClick = (category: FeaturedCategory) => {
+    setSelectedCategory(category);
+    setIsCategoryDialogOpen(true);
+  };
+
+  const handleCategoryDialogClose = () => {
+    setIsCategoryDialogOpen(false);
+    setSelectedCategory(null);
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -137,37 +145,41 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Services Section */}
+        {/* Featured Categories Section */}
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary text-center mb-12">
-              Our Signature Treatments
+              Explore Our Services
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {featuredServices.map((service) => {
-                 const serviceImage = getImageById(service.imageId);
+              {featuredCategories.map((category) => {
+                 const categoryImage = getImageById(category.imageId);
                  return (
-                  <Card key={service.id} onClick={() => handleCardClick(service)} className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-2 flex flex-col cursor-pointer">
-                    {serviceImage && (
-                       <div className="aspect-w-16 aspect-h-9">
+                  <Card 
+                    key={category.id} 
+                    onClick={() => handleCategoryCardClick(category)}
+                    className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-2 flex flex-col h-full cursor-pointer"
+                  >
+                    {categoryImage && (
+                        <div className="aspect-w-16 aspect-h-9">
                         <Image
-                          src={serviceImage.imageUrl}
-                          alt={serviceImage.description}
+                          src={categoryImage.imageUrl}
+                          alt={categoryImage.description}
                           width={600}
                           height={400}
                           className="object-cover w-full h-full"
-                          data-ai-hint={serviceImage.imageHint}
+                          data-ai-hint={categoryImage.imageHint}
                         />
-                       </div>
+                        </div>
                     )}
                     <CardHeader>
-                      <CardTitle className="font-headline text-primary">{service.shortTitle}</CardTitle>
+                      <CardTitle className="font-headline">{category.shortTitle}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col">
-                      <p className="text-muted-foreground flex-grow">{service.shortDescription}</p>
-                      <Button asChild variant="link" className="p-0 h-auto justify-start mt-4 text-primary">
-                        <Link href="/services">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                      </Button>
+                      <p className="text-muted-foreground flex-grow">{category.description}</p>
+                      <div className="p-0 h-auto justify-start mt-4 text-primary font-semibold flex items-center">
+                        <span>Learn More <ArrowRight className="ml-2 h-4 w-4 inline" /></span>
+                      </div>
                     </CardContent>
                   </Card>
                  );
@@ -199,8 +211,16 @@ export default function Home() {
       {selectedService && (
         <ServiceDetailsDialog
           service={selectedService}
-          open={isDialogOpen}
-          onOpenChange={handleDialogClose}
+          open={isServiceDialogOpen}
+          onOpenChange={handleServiceDialogClose}
+        />
+      )}
+
+      {selectedCategory && (
+        <CategoryDetailsDialog
+          category={selectedCategory}
+          open={isCategoryDialogOpen}
+          onOpenChange={handleCategoryDialogClose}
         />
       )}
     </div>

@@ -8,11 +8,11 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import type { ServiceOverview } from '@/lib/data';
+import type { Service } from '@/lib/data';
 import { getImageById } from '@/lib/data';
 
 interface ServiceDetailsDialogProps {
-  service: ServiceOverview;
+  service: Service;
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
@@ -22,7 +22,7 @@ export default function ServiceDetailsDialog({ service, open, onOpenChange }: Se
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[625px] md:max-w-[800px]">
+      <DialogContent className="sm:max-w-[625px]">
         {serviceImage && (
           <div className="relative w-full h-64 rounded-t-lg overflow-hidden">
             <Image
@@ -34,14 +34,16 @@ export default function ServiceDetailsDialog({ service, open, onOpenChange }: Se
             />
           </div>
         )}
-        <DialogHeader className="p-6">
-          <DialogTitle className="font-headline text-primary text-3xl">{service.title}</DialogTitle>
-          <DialogDescription className="text-muted-foreground text-base pt-4">
-            {service.detailedDescription.map((para, idx) => (
-              <p key={idx} className="mb-4">
-                {typeof para === "string" ? para : para.description}
-              </p>
-            ))}
+        <DialogHeader className="p-6 text-left">
+          <DialogTitle className="font-headline text-3xl">{service.title}</DialogTitle>
+          <p className="text-primary text-xl font-semibold pt-2">{service.price}</p>
+          <DialogDescription asChild className="text-muted-foreground text-base pt-4 space-y-4">
+            <div>
+              <p className="font-semibold text-foreground">{service.description}</p>
+              {service.detailedDescription.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
           </DialogDescription>
         </DialogHeader>
       </DialogContent>
