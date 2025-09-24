@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
@@ -47,6 +47,7 @@ export default function ServicesPage() {
   const gridColsClass = allCategories.length > 5 ? 'grid-cols-6' : `grid-cols-${allCategories.length}`;
 
   return (
+    <Suspense fallback={<div>loading...</div>}>
     <div className="bg-background">
       <section className="relative h-[40vh] md:h-[60vh] w-full flex items-center justify-start text-foreground">
           {heroImage && (
@@ -165,5 +166,6 @@ export default function ServicesPage() {
         )}
       </div>
     </div>
+    </Suspense>
   );
 }
