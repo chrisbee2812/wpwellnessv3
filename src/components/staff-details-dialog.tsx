@@ -25,14 +25,14 @@ export default function StaffDetailsDialog({ member, open, onOpenChange }: Staff
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[625px]">
-        <ScrollArea className="max-h-[80vh]">
+      <DialogContent className="sm:max-w-[625px] p-0">
+        <ScrollArea className="max-h-[90vh]">
           {memberImage && (
-            <div className="relative w-full h-64 rounded-t-lg overflow-hidden">
+            <div className="relative w-full h-64">
               <Image
                 src={memberImage.imageUrl}
                 alt={memberImage.description}
-                layout="fill"
+                fill
                 objectFit="cover"
                 data-ai-hint={memberImage.imageHint}
               />

@@ -1,9 +1,19 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
+export type ServiceCategory = 'Face' | 'Body' | 'Wellness' | 'Aesthetics';
+
+export type SubService = {
+  name: string;
+  duration: string;
+  price: string;
+  details?: string;
+};
+
 export type Service = {
   id: string;
-  category: 'Face' | 'Body' | 'Wellness' | 'Aesthetics';
+  primaryCategory: ServiceCategory;
+  secondaryCategories?: ServiceCategory[];
   title: string;
   description: string;
   detailedDescription: string[];
@@ -11,6 +21,7 @@ export type Service = {
   price: string;
   imageId: string;
   isMobile?: boolean;
+  subServices?: SubService[];
 };
 
 export type ServiceOverview = {
@@ -25,7 +36,7 @@ export type ServiceOverview = {
 export const services: Service[] = [
   { 
     id: 's1', 
-    category: 'Face', 
+    primaryCategory: 'Face', 
     title: 'Anti-Wrinkle Injections', 
     description: 'Anti-wrinkle injections are a popular cosmetic treatment used to reduce the appearance of wrinkles.', 
     detailedDescription: [
@@ -35,11 +46,17 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £130', 
-    imageId: 'service-face-1' 
+    imageId: 'service-face-1',
+    subServices: [
+        { name: '1 Area', duration: '20 mins', price: '£130' },
+        { name: '2 Areas', duration: '25 mins', price: '£160' },
+        { name: '3 Areas', duration: '30 mins', price: '£200' },
+        { name: 'Add-On (Eyebrow Lift, Bunny Lines etc.)', duration: '10 mins', price: '£30' },
+    ] 
   },
   { 
     id: 's2', 
-    category: 'Face', 
+    primaryCategory: 'Face', 
     title: 'Dermal Fillers', 
     description: 'Dermal fillers are used to add volume to the skin, fill wrinkles, and enhance facial features for a more youthful appearance.', 
     detailedDescription: [
@@ -48,12 +65,18 @@ export const services: Service[] = [
       "These non-surgical treatments are typically administered in areas around the eyes, mouth, nose, cheeks, lips, and jawline to smooth lines, plump lips, restore volume, and improve facial symmetry."
     ],
     subTreatments: [],
-    price: 'from £150', 
-    imageId: 'service-face-2' 
+    price: 'From $150',
+    imageId: 'service-aesthetics-2',
+    subServices: [
+        { name: 'Lip Filler', duration: '30 mins', price: '£180', details: 'Enhances lip volume and shape for a fuller, more defined look.' },
+        { name: 'Marionette Lines', duration: '30 mins', price: '£150', details: 'Softens the lines that run from the corners of the mouth down to the chin.' },
+        { name: 'Nasolabial Lines', duration: '30 mins', price: '£150', details: 'Reduces the appearance of smile lines, the creases that run from the nose to the mouth.' },
+        { name: 'Filler Dissolver (per area)', duration: '30 mins', price: '£120' },
+    ]
   },
   { 
     id: 's3', 
-    category: 'Face', 
+    primaryCategory: 'Face', 
     title: 'Skin Boosters & Eye Boosters', 
     description: 'Skin boosters and eye boosters designed to improve skin quality, hydration, and texture.', 
     detailedDescription: [
@@ -63,10 +86,23 @@ export const services: Service[] = [
     subTreatments: [],
     price: 'from £70', 
     imageId: 'service-face-3', 
+    subServices: [
+        { name: 'Jalupro (Face + Eyes)', duration: '45 mins', price: '£170' },
+        { name: 'Toskani', duration: '45 mins', price: '£140' },
+        { name: 'Profhilo', duration: '45 mins', price: '£160' },
+        { name: 'Lumi Pro', duration: '45 mins', price: '£140' },
+        { name: 'Seventy Hyal', duration: '45 mins', price: '£140' },
+        { name: 'Regevenue', duration: '45 mins', price: '£140' },
+        { name: 'Lemon Bottle', duration: '45 mins', price: '£140' },
+        { name: 'Sosum', duration: '45 mins', price: '£140' },
+        { name: 'Lumi Eyes', duration: '30 mins', price: '£90' },
+        { name: 'Ami Eyes', duration: '30 mins', price: '£70' },
+        { name: 'Jalupro (Under Eye)', duration: '30 mins', price: '£120' },
+    ]
   },
   { 
     id: 's4', 
-    category: 'Body', 
+    primaryCategory: 'Body', 
     title: 'Fat Dissolving Injections', 
     description: 'Fat dissolving injections are a minimally invasive cosmetic treatment designed to break down fat cells in specific areas of the body.', 
     detailedDescription: [
@@ -77,11 +113,17 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £120', 
-    imageId: 'service-body-1'
+    imageId: 'service-body-1',
+    subServices: [
+        { name: 'Fat Dissolving Lemon Bottle', duration: '30 mins', price: '£140' },
+        { name: 'LipoLab', duration: '30 mins', price: '£120' },
+        { name: 'Aqualyx', duration: '30 mins', price: '£130' },
+        { name: 'Cellulite Removal Injections', duration: '30 mins', price: '£89' },
+    ]
   },
   { 
     id: 's5', 
-    category: 'Body', 
+    primaryCategory: 'Body', 
     title: 'Vitamin Injections', 
     description: 'Vitamin injections deliver essential nutrients directly into the bloodstream, for fast and efficient absorption.', 
     detailedDescription: [
@@ -91,11 +133,17 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £30', 
-    imageId: 'service-body-2' 
+    imageId: 'service-body-2',
+    subServices: [
+        { name: 'Vitamin D', duration: '15 mins', price: '£35' },
+        { name: 'Vitamin C', duration: '15 mins', price: '£30' },
+        { name: 'Vitamin B12', duration: '15 mins', price: '£25' },
+        { name: 'Biotin', duration: '15 mins', price: '£35' },
+    ]
   },
   { 
     id: 's6', 
-    category: 'Wellness', 
+    primaryCategory: 'Wellness', 
     title: 'Facial & Skin Treatments', 
     description: 'Various cosmetic treatments designed to achieve a smooth, radiant, and translucent complexion', 
     detailedDescription: [
@@ -106,11 +154,20 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £20', 
-    imageId: 'service-wellness-1', 
+    imageId: 'service-wellness-1',
+    subServices: [
+        { name: 'Hydro Facial Mini', duration: '30 mins', price: '£60' },
+        { name: 'Hydro Facial Deluxe', duration: '60 mins', price: '£100' },
+        { name: 'Glass Facial', duration: '60 mins', price: '£120' },
+        { name: 'Carbon Peel', duration: '30 mins', price: '£50' },
+        { name: 'Chemical Peel (Face)', duration: '30 mins', price: '£60' },
+        { name: 'Chemical Peel (Face + Hands)', duration: '45 mins', price: '£70' },
+        { name: 'LED Nano Spray with Mini Facial', duration: '25 mins', price: '£20' },
+    ] 
   },
   { 
     id: 's7', 
-    category: 'Wellness', 
+    primaryCategory: 'Wellness', 
     title: 'Massage & Holistic Therapies', 
     description: 'Experience our incredible hot stone massage, or indulgent foot therapy.', 
     detailedDescription: [
@@ -119,11 +176,15 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £40', 
-    imageId: 'service-wellness-2' 
+    imageId: 'service-wellness-2',
+    subServices: [
+        { name: 'Hot Stone Massage', duration: '30 mins', price: '£40' },
+        { name: 'Foot Therapy (Wash, Exfoliate, Massage, Mask, Moisturiser)', duration: '45 mins', price: '£45' },
+    ] 
   },
   {
     id: 's8',
-    category: 'Wellness',
+    primaryCategory: 'Wellness',
     title: 'Pandora Star Light Therapies',
     description: ' Pandora Star provides immersive visual and sensory experiences, supporting relaxation and encouraging creative exploration.',
     detailedDescription: [
@@ -134,11 +195,16 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £25',
-    imageId: 'service-aesthetics-1'
+    imageId: 'service-aesthetics-1',
+    subServices: [
+        { name: 'Pandora Star Light Therapy – Intro', duration: '20 mins', price: '£25' },
+        { name: 'Pandora Star Light Therapy – Full', duration: '40 mins', price: '£45' },
+        { name: 'Pandora Star + Breathwork', duration: '60 mins', price: '£60' },
+    ]
   },
   {
     id: 's9',
-    category: 'Aesthetics',
+    primaryCategory: 'Aesthetics',
     title: 'Brows, Lashes & Threading',
     description: 'Experience our many eyebrow and eyelash treatments.',
     detailedDescription: [
@@ -148,11 +214,20 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £7',
-    imageId: 'service-aesthetics-2'
+    imageId: 'service-aesthetics-2',
+    subServices: [
+        { name: 'Brow Lamination', duration: '30 mins', price: '£25' },
+        { name: 'Brow Lamination with Henna', duration: '40 mins', price: '£30' },
+        { name: 'Eyebrow Tint', duration: '10 mins', price: '£7' },
+        { name: 'Tint & Wax', duration: '15 mins', price: '£15' },
+        { name: 'LVL Lash Lift', duration: '45 mins', price: '£40' },
+        { name: 'Eyebrow Threading', duration: '10 mins', price: '£9' },
+        { name: 'Eyebrow, Lip & Chin Threading', duration: '20 mins', price: '£15' },
+    ] 
   },
   { 
     id: 's10', 
-    category: 'Wellness', 
+    primaryCategory: 'Wellness', 
     title: 'Cryopen Lesion Removal', 
     description: 'Our safe and precise removal of benign skin lesions.', 
     detailedDescription: [
@@ -160,11 +235,19 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £50', 
-    imageId: 'service-wellness-2' 
+    imageId: 'service-wellness-2',
+    subServices: [
+        { name: 'Skin Tags', duration: '15–30 mins', price: 'From £50' },
+        { name: 'Cherry Angiomas', duration: '15–30 mins', price: 'From £50' },
+        { name: 'Age Spots', duration: '15–30 mins', price: 'From £50' },
+        { name: 'Warts', duration: '15–30 mins', price: 'From £50' },
+        { name: 'Verrucas', duration: '15–30 mins', price: 'From £50' },
+        { name: 'Milia', duration: '15–30 mins', price: 'From £50' },
+    ] 
   },
   {
     id: 's11',
-    category: 'Aesthetics',
+    primaryCategory: 'Aesthetics',
     title: 'Advanced Needling Treatments',
     description: 'Reduce the appearance of facial wrinkles with this popular injectable treatment.',
     detailedDescription: [
@@ -173,11 +256,17 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £45',
-    imageId: 'service-aesthetics-1'
+    imageId: 'service-aesthetics-1',
+    subServices: [
+        { name: 'Microneedling + Mini Facial + Standard Serum', duration: '45 mins', price: 'From £45' },
+        { name: 'Microneedling + Mini Facial + Premium Serum', duration: '60 mins', price: 'From £65' },
+        { name: 'Nano Needling + Mini Facial + Standard Serum', duration: '45 mins', price: 'From £45' },
+        { name: 'Nano Needling + Mini Facial + Premium Serum', duration: '60 mins', price: 'From £65' },
+    ] 
   },
   {
     id: 's12',
-    category: 'Aesthetics',
+    primaryCategory: 'Aesthetics',
     title: 'Body Treatments',
     description: 'Restore volume and fullness to the face, creating a more youthful appearance.',
     detailedDescription: [
@@ -186,11 +275,16 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £30',
-    imageId: 'service-aesthetics-2'
+    imageId: 'service-aesthetics-2',
+    subServices: [
+        { name: 'Full Body Scrub', duration: '45 mins', price: '£50' },
+        { name: 'Hydro Jelly Mask Facial Premium', duration: '40 mins', price: '£50' },
+        { name: 'Hydro Jelly Mask Facial Standard', duration: '25 mins', price: '£30' },
+    ] 
   },
   {
     id: 's13',
-    category: 'Aesthetics',
+    primaryCategory: 'Aesthetics',
     title: 'Ear Wax Removal',
     description: 'Restore your hearing with our earwax suction treatment.',
     detailedDescription: [
@@ -262,6 +356,16 @@ export function getImageById(id: string): ImagePlaceholder | undefined {
 
 export function getServiceById(id: string): Service | undefined {
     return services.find((s) => s.id === id);
+}
+
+export type SubServiceWithParent = SubService & { parentTitle: string };
+
+export function getAllSubServices(): SubServiceWithParent[] {
+  return services.flatMap(service => 
+    service.subServices 
+      ? service.subServices.map(sub => ({ ...sub, parentTitle: service.title }))
+      : []
+  );
 }
 
 export type FeaturedCategory = {

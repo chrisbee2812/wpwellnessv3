@@ -1,5 +1,7 @@
 "use client";
 
+import React, { useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -8,14 +10,23 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { getAllSubServices } from '@/lib/data';
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -27,6 +38,7 @@ const formSchema = z.object({
   subject: z.string().min(5, {
     message: "Subject must be at least 5 characters.",
   }),
+  service: z.string().optional(),
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
@@ -34,16 +46,43 @@ const formSchema = z.object({
 
 export default function ContactForm() {
   const { toast } = useToast();
+  const searchParams = useSearchParams();
+  const subjectParam = searchParams.get('subject');
+
+  const allSubServices = getAllSubServices();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       email: "",
-      subject: "",
+      subject: subjectParam || "",
+      service: "",
       message: "",
     },
   });
+
+  useEffect(() => {
+    if (subjectParam) {
+      form.setValue('subject', subjectParam);
+    }
+  }, [subjectParam, form]);
+
+  const selectedService = form.watch('service');
+  useEffect(() => {
+    if (selectedService) {
+      const subService = allSubServices.find(s => s.name === selectedService);
+      if (!subService) return;
+      const currentMessage = form.getValues('message');
+      const serviceText = `I'm interested in booking the ${subService.parentTitle}: ${subService.name} treatment.`;
+      
+      // Avoid appending if the text is already there
+      if (!currentMessage.includes(serviceText)) {
+        const newMessage = currentMessage ? `${currentMessage}\n\n${serviceText}` : serviceText;
+        form.setValue('message', newMessage);
+      }
+    }
+  }, [selectedService, form, allSubServices]);
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
@@ -97,6 +136,33 @@ export default function ContactForm() {
                   <FormControl>
                     <Input placeholder="Question about a service" {...field} />
                   </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="service"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Service of Interest</FormLabel>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select a service (optional)" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      {allSubServices.map((sub, index) => (
+                        <SelectItem key={index} value={sub.name}>
+                          {sub.parentTitle}: {sub.name}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <FormDescription>
+                    Selecting a service will add it to your message.
+                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}

@@ -1,11 +1,19 @@
+"use client";
+
+import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { services, serviceCategories } from '@/lib/data';
+import { services } from '@/lib/data';
+import { HelpCircle } from 'lucide-react';
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+import { Button } from '@/components/ui/button';
 
 export default function PricingPage() {
-  // Exclude 'Mobile' from categories to be displayed as sections, as it's a filter not a category with unique services
-  const displayCategories = serviceCategories.filter(c => c !== 'Mobile');
-
+  
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
@@ -18,27 +26,47 @@ export default function PricingPage() {
 
         <Card className="max-w-4xl mx-auto">
           <CardContent className="p-6 md:p-8">
-            {displayCategories.map((category, index) => (
-              <div key={category} className={index > 0 ? 'mt-10' : ''}>
-                <h2 className="text-2xl md:text-3xl font-headline font-bold text-primary mb-6">{category} Treatments</h2>
-                <div className="space-y-4">
-                  {services
-                    .filter((service) => service.category === category)
-                    .map((service, serviceIndex, arr) => (
-                      <div key={service.id}>
-                        <div className="flex justify-between items-start gap-4">
-                          <div>
-                            <h3 className="font-semibold text-lg">{service.title}</h3>
-                            <p className="text-sm text-muted-foreground">{service.description}</p>
-                          </div>
-                          <p className="text-lg font-semibold text-foreground whitespace-nowrap">{service.price}</p>
-                        </div>
-                        {serviceIndex < arr.length - 1 && <Separator className="mt-4" />}
+            <div className="space-y-4">
+              {services.map((service, serviceIndex) => (
+                  <div key={service.id}>
+                    <div className="flex justify-between items-start gap-4">
+                      <div>
+                        <h3 className="font-semibold text-lg">{service.title}</h3>
+                        <p className="text-sm text-muted-foreground">{service.description}</p>
                       </div>
-                    ))}
-                </div>
-              </div>
-            ))}
+                      {!service.subServices && <p className="text-lg font-semibold text-foreground whitespace-nowrap">{service.price}</p>}
+                    </div>
+                    
+                    {service.subServices && (
+                      <div className="mt-4 pl-4 border-l-2 border-border space-y-3">
+                         {service.subServices.map((sub, subIndex) => (
+                            <div key={subIndex} className="flex justify-between items-center">
+                                <div className='flex items-center gap-2'>
+                                    <p className="font-medium">{sub.name}</p>
+                                    <p className="text-sm text-muted-foreground">{sub.duration}</p>
+                                    {sub.details && (
+                                      <Popover>
+                                        <PopoverTrigger>
+                                          <HelpCircle className="h-4 w-4 text-muted-foreground cursor-pointer" />
+                                        </PopoverTrigger>
+                                        <PopoverContent className='text-sm'>{sub.details}</PopoverContent>
+                                      </Popover>
+                                    )}
+                                </div>
+                                <div className="flex items-center gap-4">
+                                  <p className="font-semibold">{sub.price}</p>
+                                  <Button variant="outline" size="sm" asChild>
+                                    <Link href={`/contact?subject=Booking enquiry: ${sub.name}`}>Book Now</Link>
+                                  </Button>
+                                </div>
+                            </div>
+                         ))}
+                      </div>
+                    )}
+                        {serviceIndex < services.length - 1 && <Separator className="mt-4" />}
+                  </div>
+                ))}
+            </div>
           </CardContent>
         </Card>
       </div>
