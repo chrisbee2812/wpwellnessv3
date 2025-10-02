@@ -51,7 +51,7 @@ export default function StaffPage() {
                 Our skilled and passionate team is the heart of West Park Wellness Studio.
             </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {teamMembers.map((member) => {
               const memberImage = getImageById(member.imageId);
               return (
@@ -62,7 +62,7 @@ export default function StaffPage() {
                 >
                   <CardContent className="p-6">
                     {memberImage && (
-                      <div className="mb-4 rounded-full overflow-hidden w-32 h-32 mx-auto shadow-md">
+                      <div className="mb-4 rounded-full overflow-hidden w-64 h-64 mx-auto shadow-md">
                         <Image
                           src={memberImage.imageUrl}
                           alt={memberImage.description}

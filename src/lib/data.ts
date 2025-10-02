@@ -7,6 +7,7 @@ export type Service = {
   title: string;
   description: string;
   detailedDescription: string[];
+  subTreatments: string[];
   price: string;
   imageId: string;
   isMobile?: boolean;
@@ -25,114 +26,183 @@ export const services: Service[] = [
   { 
     id: 's1', 
     category: 'Face', 
-    title: 'HydraFacial Glow', 
-    description: 'Deep cleansing, exfoliation, and hydration for an instant glow. Perfect for all skin types.', 
+    title: 'Anti-Wrinkle Injections', 
+    description: 'Anti-wrinkle injections are a popular cosmetic treatment used to reduce the appearance of wrinkles.', 
     detailedDescription: [
-      "The HydraFacial is an invigorating treatment that can be given in as little as 30 minutes. It delivers long-term skin health and can be tailored to meet the specific needs of all skin types.",
-      "It offers instant, noticeable results with no downtime or irritation. The HydraFacial treatment removes dead skin cells and extracts impurities while simultaneously bathing the new skin with cleansing, hydrating and moisturizing serums."
+      "Anti-wrinkle injections are a non-surgical cosmetic treatment used to reduce the appearance of facial wrinkles and lines.",
+      "Common treatment areas include forehead lines, glabellar lines (frown lines between the eyebrows), crow’s feet around the eyes, bunny lines on the nose, and lines around the mouth.",
+      "Results usually begin to appear within a few days, with full effects visible after 10–14 days. The duration of results varies but generally lasts between 3 to 6 months."
     ],
-    price: '$150', 
+    subTreatments: [],
+    price: 'from £130', 
     imageId: 'service-face-1' 
   },
   { 
     id: 's2', 
     category: 'Face', 
-    title: 'Microneedling Rejuvenation', 
-    description: 'Stimulates collagen production to reduce fine lines, wrinkles, and acne scars.', 
+    title: 'Dermal Fillers', 
+    description: 'Dermal fillers are used to add volume to the skin, fill wrinkles, and enhance facial features for a more youthful appearance.', 
     detailedDescription: [
-      "Microneedling is a minimally invasive procedure that uses fine needles to create tiny punctures in the top layer of the skin. This process works to rejuvenate your skin by boosting collagen production, which in turn reduces the appearance of wrinkles and fine lines and elevates the overall texture of your skin.",
-      "This treatment is highly effective for treating acne scars, surgical scars, enlarged pores, and hyperpigmentation."
+      "Dermal fillers are injectable substances used to add volume to the skin, fill wrinkles, and enhance facial features for a more youthful appearance.",
+      "They are commonly used to address volume loss in the face, which occurs with aging due to decreased collagen and elastin production, leading to sagging skin, sunken cheeks, and hollowed temples.",
+      "These non-surgical treatments are typically administered in areas around the eyes, mouth, nose, cheeks, lips, and jawline to smooth lines, plump lips, restore volume, and improve facial symmetry."
     ],
-    price: '$250', 
+    subTreatments: [],
+    price: 'from £150', 
     imageId: 'service-face-2' 
   },
   { 
     id: 's3', 
     category: 'Face', 
-    title: 'Chemical Peel Clarity', 
-    description: 'A custom peel to improve skin texture, tone, and reduce imperfections.', 
+    title: 'Skin Boosters & Eye Boosters', 
+    description: 'Skin boosters and eye boosters designed to improve skin quality, hydration, and texture.', 
     detailedDescription: [
-      "Our chemical peels are tailored to your specific skin concerns. By applying a chemical solution to the skin, we can cause it to exfoliate and eventually peel off, revealing new, smoother, and more refined skin underneath.",
-      "This is an ideal treatment for those looking to improve the appearance of mild scarring, fine lines, sun damage, and certain types of acne."
+      "Skin boosters and eye boosters are injectable treatments designed to improve skin quality, hydration, and texture, particularly in the delicate under-eye area, offering a non-surgical alternative to dermal fillers for addressing concerns like fine lines, dark circles, and dullness.",
+      "These treatments work by delivering hyaluronic acid, polynucleotides, amino acids, and other active ingredients beneath the skin's surface to stimulate collagen and elastin production, enhance firmness, and provide deep, long-lasting hydration without significant volume addition."
     ],
-    price: '$180', 
+    subTreatments: [],
+    price: 'from £70', 
     imageId: 'service-face-3', 
-    isMobile: true 
   },
   { 
     id: 's4', 
     category: 'Body', 
-    title: 'Velvet Skin Body Polish', 
-    description: 'An exfoliating and moisturizing treatment for silky-smooth skin from head to toe.', 
+    title: 'Fat Dissolving Injections', 
+    description: 'Fat dissolving injections are a minimally invasive cosmetic treatment designed to break down fat cells in specific areas of the body.', 
     detailedDescription: [
-      "Reveal your softest skin with our Velvet Skin Body Polish. This luxurious treatment involves a gentle exfoliation to buff away dead skin cells, followed by the application of a rich, hydrating moisturizer.",
-      "Your skin will feel incredibly smooth, supple, and look radiant."
+      "Fat dissolving injections, also known as lipolytic injections or non-surgical liposuction, are a minimally invasive cosmetic treatment designed to break down fat cells in specific areas of the body.",
+      "The treatment works by injecting a naturally occurring compound in the body, that aids in fat absorption directly into targeted fat deposits.",
+      "Common treatment areas include the double chin, abdomen, thighs, love handles, underarms, flanks, inner thighs, and buttocks.",
+      "The procedure is particularly effective for reducing small, stubborn pockets of fat that do not respond to diet and exercise."
     ],
-    price: '$120', 
-    imageId: 'service-body-1', 
-    isMobile: true 
+    subTreatments: [],
+    price: 'from £120', 
+    imageId: 'service-body-1'
   },
   { 
     id: 's5', 
     category: 'Body', 
-    title: 'Contouring Body Wrap', 
-    description: 'A detoxifying wrap that helps to tone and firm the body, reducing the appearance of cellulite.', 
+    title: 'Vitamin Injections', 
+    description: 'Vitamin injections deliver essential nutrients directly into the bloodstream, for fast and efficient absorption.', 
     detailedDescription: [
-      "Our Contouring Body Wrap is a treatment designed to detoxify and tone the body. A mineral-rich formula is applied to the skin, and you are then wrapped in warm towels to promote detoxification and skin tightening.",
-      "This treatment can help reduce the appearance of cellulite and leave your skin feeling firmer and more toned."
+      "Vitamin injections deliver essential nutrients directly into the bloodstream, bypassing the digestive system for faster and more efficient absorption compared to oral supplements.",
+      "Our administered injections include Vitamin B12, which supports red blood cell formation, nerve function, and energy metabolism.",
+      "Vitamin C, known for its antioxidant properties that support skin health and immune function, and Vitamin D, which is important for general well-being and may be recommended for those feeling tired or rundown.",
     ],
-    price: '$200', 
+    subTreatments: [],
+    price: 'from £30', 
     imageId: 'service-body-2' 
   },
   { 
     id: 's6', 
     category: 'Wellness', 
-    title: 'Aromatherapy Escape', 
-    description: 'A relaxing massage using essential oils to soothe the mind and body.', 
+    title: 'Facial & Skin Treatments', 
+    description: 'Various cosmetic treatments designed to achieve a smooth, radiant, and translucent complexion', 
     detailedDescription: [
-      "Embark on a sensory journey with our Aromatherapy Escape. This massage uses a custom blend of essential oils to address your specific needs, whether it's to relax, energize, or rebalance.",
-      "The combination of gentle massage and aromatic oils will leave you feeling deeply relaxed and rejuvenated."
+      "Experience a range of facial and skin treatments designed to give you a smooth, radiant and translucent complexion.",
+      "Our Hydro Facial treatments cleanse, exfoliate, extract impurities and hydrate the skin, offering immediate results.",
+      "Our Carbon facial, exfoliates the skin, cleanses pores and stimulates collagen production for improved texture and firmness.",
+      "Our chemical facial exfoliates away dead or damaged skin, revealing the fresher, brighter, and more youthful-looking skin beneath."
     ],
-    price: '$110', 
+    subTreatments: [],
+    price: 'from £20', 
     imageId: 'service-wellness-1', 
-    isMobile: true 
   },
   { 
     id: 's7', 
     category: 'Wellness', 
-    title: 'Hot Stone Harmony', 
-    description: 'Melt away tension with a therapeutic hot stone massage that promotes deep relaxation.', 
+    title: 'Massage & Holistic Therapies', 
+    description: 'Experience our incredible hot stone massage, or indulgent foot therapy.', 
     detailedDescription: [
-      "The Hot Stone Harmony massage uses smooth, heated stones, placed on key points of the body, to warm and relax muscles, allowing the therapist to work on deeper muscle layers.",
-      "This deeply relaxing treatment helps to release tension, ease muscle stiffness, and increase circulation, promoting a sense of well-being."
+      "Our Hot Stone massage helps relive tension and pain, reduces stress and anxiety, promotes sleep and may even boost your immunity. Such an incredibly relaxing experience, you'll always come back for more.",
+      "The Foot therapy treatment is an all encompasing indulgence for your feet. They get exfoliated, massaged, moisturised, and more, to leave your feet feeling and looking incredible."
     ],
-    price: '$140', 
+    subTreatments: [],
+    price: 'from £40', 
     imageId: 'service-wellness-2' 
   },
   {
     id: 's8',
-    category: 'Aesthetics',
-    title: 'Botox',
-    description: 'Reduce the appearance of facial wrinkles with this popular injectable treatment.',
+    category: 'Wellness',
+    title: 'Pandora Star Light Therapies',
+    description: ' Pandora Star provides immersive visual and sensory experiences, supporting relaxation and encouraging creative exploration.',
     detailedDescription: [
-      'Botox is a neurotoxin that temporarily paralyzes muscles, which can reduce the appearance of facial wrinkles.',
-      'It is a quick, minimally invasive procedure with no downtime.',
+      'Using LED lights arranged in a sacred geometrical pattern, PandoraStar can be programmed to produce high frequency light for the brain to decode in unique ways.',
+      'The light is often used for entering meditation, hypnosis, and trance states for personal and spiritual development. PandoraStar provides immersive visual and sensory experiences, supporting relaxation and encouraging creative exploration.',
+      'People often report experiencing vivid closed-eye visuals, time distortion, lucid dreamlike and visionary states, and out-of-body experiences while using the light.',
+      'Pandora Star light therapy can aid with stress, anxiety, pain and sleep disorders, memory and concentration, creativity and general focus. Each session is programmed for your desired outcome.'
     ],
-    price: 'From $300',
+    subTreatments: [],
+    price: 'from £25',
     imageId: 'service-aesthetics-1'
   },
   {
     id: 's9',
     category: 'Aesthetics',
-    title: 'Dermal Fillers',
+    title: 'Brows, Lashes & Threading',
+    description: 'Experience our many eyebrow and eyelash treatments.',
+    detailedDescription: [
+      'Brow lamination is a semi-permanent cosmetic treatment that straightens and sets eyebrow hairs in a desired, upward direction, creating a fuller, more defined, and uniformly shaped appearance.',
+      'Threading is used for its precision, and is particularly effective for shaping eyebrows and removing fine, stray facial hairs. It is considered a less invasive method compared to waxing, making it suitable for sensitive skin.',
+      'We also provide tinting for brows and lashes, click to view all our available treatments.'
+    ],
+    subTreatments: [],
+    price: 'from £7',
+    imageId: 'service-aesthetics-2'
+  },
+  { 
+    id: 's10', 
+    category: 'Wellness', 
+    title: 'Cryopen Lesion Removal', 
+    description: 'Our safe and precise removal of benign skin lesions.', 
+    detailedDescription: [
+      "CryoPen Lesion removal is our safe and precise removal of benign skin lesions, including skin tags, warts, verrucas, cherry angiomas, milia, age spots, sun spots, and pigmentation.",
+    ],
+    subTreatments: [],
+    price: 'from £50', 
+    imageId: 'service-wellness-2' 
+  },
+  {
+    id: 's11',
+    category: 'Aesthetics',
+    title: 'Advanced Needling Treatments',
+    description: 'Reduce the appearance of facial wrinkles with this popular injectable treatment.',
+    detailedDescription: [
+      'Microneedling stimulates the production of collagen and elastin, leading to improved skin texture, reduced appearance of scars (including acne, surgical, and burn scars), stretch marks, fine lines, wrinkles, pigmentation, and enlarged pores.',
+      'Nano needling is a non-invasive skin treatment designed to improve skin tone, texture, and hydration. It is a gentle process, suitable for all skin types, and safe for use on sensitive areas like the eye and lip regions.',
+    ],
+    subTreatments: [],
+    price: 'from £45',
+    imageId: 'service-aesthetics-1'
+  },
+  {
+    id: 's12',
+    category: 'Aesthetics',
+    title: 'Body Treatments',
     description: 'Restore volume and fullness to the face, creating a more youthful appearance.',
     detailedDescription: [
-      'Dermal fillers are gel-like substances that are injected beneath the skin to restore lost volume, smooth lines and soften creases, or enhance facial contours.',
-      'Common areas for treatment include cheeks, lips, and nasolabial folds.'
+      'Our full body scrubs and hydro jelly treatments envigorate, exfoliate and unclog pores to reveal the softer skin underneath.',
+      'These processes can help hydrate, detoxify the skin, improve circulation, and enhance the absorption of moisturizers and other skincare products.'
     ],
-    price: 'From $500',
+    subTreatments: [],
+    price: 'from £30',
     imageId: 'service-aesthetics-2'
-  }
+  },
+  {
+    id: 's13',
+    category: 'Aesthetics',
+    title: 'Ear Wax Removal',
+    description: 'Restore your hearing with our earwax suction treatment.',
+    detailedDescription: [
+      'Experience the soothing harmony of a clean auditory canvas, ensuring your ears are free to absorb the sounds of life with crystal-clear precision. Our gentle earwax removal service is designed to provide relief from discomfort and enhance your hearing clarity.',
+      'Using safe and effective techniques, we carefully remove excess earwax buildup, promoting better ear health and preventing potential complications. Whether you\'re experiencing muffled hearing, tinitus or discomfort, our professional care will leave your ears feeling refreshed and revitalized.',
+      'Ideal for those experiencing tinitus or other hearing difficulties, discomfort, or seeking routine ear care.'
+    ],
+    subTreatments: [],
+    price: 'from £30',
+    imageId: 'service-aesthetics-2',
+    isMobile: true 
+  },
 ];
 
 export const serviceCategories = ['Face', 'Body', 'Wellness', 'Aesthetics', 'Mobile'];
@@ -150,40 +220,40 @@ export type TeamMember = {
 export const teamMembers: TeamMember[] = [
   { 
     id: 't1', 
-    name: 'Eleonora Vance', 
-    role: 'Lead Esthetician', 
+    name: 'Becky', 
+    role: 'Founder / Owner', 
     imageId: 'team-member-1',
     bio: [
-      "With over a decade of experience in the beauty industry, Eleonora is a master of skincare and aesthetics. Her passion lies in creating personalized treatment plans that deliver visible, lasting results.",
-      "She believes in a holistic approach, combining advanced techniques with a deep understanding of skin health to help clients achieve their goals."
+      "Becky is the founder of West Park Wellness Studio, where she combines her passion for holistic health with advanced wellness technology.",
+      "With training in biofeedback, skincare, and non-invasive treatments, she helps clients restore balance in both body and mind. Becky believes in creating a safe, welcoming space where every client feels cared for, respected, and empowered on their journey to healing and confidence."
     ],
     qualifications: ["Licensed Master Esthetician", "Certified in Advanced Chemical Peels", "HydraFacial Master Certified"],
     treatments: ["s1", "s2", "s3", "s9"]
   },
   { 
     id: 't2', 
-    name: 'Julien Beaumont', 
-    role: 'Massage Therapist', 
+    name: 'Katie', 
+    role: 'Beauty Therapist', 
     imageId: 'team-member-2',
     bio: [
-      "Julien is a certified massage therapist with a gift for healing touch. He specializes in therapeutic and relaxation massage, drawing from a variety of modalities to best suit his clients' needs.",
-      "His intuitive approach helps to release tension, alleviate pain, and promote a profound sense of well-being."
+      "Katie is a fully qualified beautician with over 6 years of experience in the beauty industry.",
+      "She specialises in brows and LVL lash lifts, helping clients enhance their natural features with precision and care. Known for her attention to detail and friendly approach, Katie ensures every client feels comfortable and leaves with a boost of confidence."
     ],
     qualifications: ["Licensed Massage Therapist", "Certified in Hot Stone Therapy", "Aromatherapy Specialist"],
     treatments: ["s4", "s5", "s6", "s7"]
   },
-  { 
-    id: 't3', 
-    name: 'Sofia Rossi', 
-    role: 'Skincare Specialist', 
-    imageId: 'team-member-3',
-    bio: [
-      "Sofia is a dedicated skincare specialist with a passion for helping clients achieve healthy, radiant skin. She is an expert in analyzing skin conditions and recommending effective treatment and home-care regimens.",
-      "Her gentle touch and extensive knowledge make every facial a relaxing and educational experience."
-    ],
-    qualifications: ["Licensed Esthetician", "Certified in Microneedling", "Expert in Cosmetic Ingredient Knowledge"],
-    treatments: ["s1", "s2", "s3", "s8"]
-  },
+  // { 
+  //   id: 't3', 
+  //   name: 'Sofia Rossi', 
+  //   role: 'Skincare Specialist', 
+  //   imageId: 'team-member-3',
+  //   bio: [
+  //     "Sofia is a dedicated skincare specialist with a passion for helping clients achieve healthy, radiant skin. She is an expert in analyzing skin conditions and recommending effective treatment and home-care regimens.",
+  //     "Her gentle touch and extensive knowledge make every facial a relaxing and educational experience."
+  //   ],
+  //   qualifications: ["Licensed Esthetician", "Certified in Microneedling", "Expert in Cosmetic Ingredient Knowledge"],
+  //   treatments: ["s1", "s2", "s3", "s8"]
+  // },
 ];
 
 export function getImageById(id: string): ImagePlaceholder | undefined {
@@ -243,17 +313,17 @@ export const featuredCategories: FeaturedCategory[] = [
     imageId: 'earwax-removal',
     link: '/services?category=Mobile'
   },
-  {
-    id: 'fc4',
-    title: 'Oberon Biofeedback Therapy, Harmonize Your Energy',
-    shortTitle: 'Oberon Biofeedback Therapy',
-    description: 'Oberon Biofeedback system is a non-invasive wellness tool that uses quantum frequency scanning to detect imbalances in the body.',
-    detailedDescription: [
-        'Our Oberon Biofeedback system is a non-invasive wellness tool that uses quantum frequency scanning to detect imbalances in the body — physically, emotionally, and energetically.',
-        'This advanced technology gently scans the body’s internal systems (organs, meridians, microbiome, chakras, and more) using headphones that transmit specific frequencies. It then compares your body’s responses to healthy reference data to highlight any areas of stress, deficiency, or disharmony.',
-        'Following the scan, targeted meta-therapy can be applied to help support energetic balance and stimulate the body’s natural self-healing processes.'
-    ],
-    imageId: 'oberon-biofeedback',
-    link: '/services?category=Wellness'
-  }
+  // {
+  //   id: 'fc4',
+  //   title: 'Oberon Biofeedback Therapy, Harmonize Your Energy',
+  //   shortTitle: 'Oberon Biofeedback Therapy',
+  //   description: 'Oberon Biofeedback system is a non-invasive wellness tool that uses quantum frequency scanning to detect imbalances in the body.',
+  //   detailedDescription: [
+  //       'Our Oberon Biofeedback system is a non-invasive wellness tool that uses quantum frequency scanning to detect imbalances in the body — physically, emotionally, and energetically.',
+  //       'This advanced technology gently scans the body’s internal systems (organs, meridians, microbiome, chakras, and more) using headphones that transmit specific frequencies. It then compares your body’s responses to healthy reference data to highlight any areas of stress, deficiency, or disharmony.',
+  //       'Following the scan, targeted meta-therapy can be applied to help support energetic balance and stimulate the body’s natural self-healing processes.'
+  //   ],
+  //   imageId: 'oberon-biofeedback',
+  //   link: '/services?category=Wellness'
+  // }
 ];

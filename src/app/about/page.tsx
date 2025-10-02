@@ -22,10 +22,10 @@ export default function AboutPage() {
             <div className="order-2 md:order-1">
               <h2 className="text-3xl font-headline text-primary font-bold mb-4">Our Mission</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                At West Park, we believe that true beauty is a reflection of health and wellness. Our mission is to provide personalized, science-backed cosmetic services in a serene and welcoming environment. We are committed to using high-quality products and innovative techniques to help our clients achieve their skin goals and feel confidently radiant.
+                At West Park Wellness Studio, our mission is to provide a safe, welcoming space where clients can relax, heal, and restore balance. We combine advanced wellness technologies with compassionate care to support the body, mind, and spirit.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We strive to educate and empower our clients, building lasting relationships based on trust and exceptional results. Your journey to luminous skin is our passion.
+                Every treatment is guided by our values of integrity, professionalism, privacy, and kindness — ensuring our clients feel respected, renewed, and empowered with confidence in their own skin.
               </p>
             </div>
             {missionImage && (

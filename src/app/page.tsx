@@ -151,7 +151,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary text-center mb-12">
               Explore Our Services
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featuredCategories.map((category) => {
                  const categoryImage = getImageById(category.imageId);
                  return (
@@ -173,7 +173,7 @@ export default function Home() {
                         </div>
                     )}
                     <CardHeader>
-                      <CardTitle className="font-headline">{category.shortTitle}</CardTitle>
+                      <CardTitle className="font-headline text-primary">{category.shortTitle}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col">
                       <p className="text-muted-foreground flex-grow">{category.description}</p>

@@ -48,7 +48,7 @@ export default function ServicesPageContent() {
     <div className="bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-headline font-bold">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl font-headline text-primary font-bold">Our Services</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             Indulge in our curated selection of treatments designed to rejuvenate, refresh, and relax.
           </p>
@@ -64,7 +64,7 @@ export default function ServicesPageContent() {
           </TabsList>
           
           <TabsContent value="All">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {services.map((service) => {
                     const serviceImage = getImageById(service.imageId);
                     return (
@@ -82,7 +82,7 @@ export default function ServicesPageContent() {
                            </div>
                         )}
                         <CardHeader>
-                          <CardTitle className="font-headline">{service.title}</CardTitle>
+                          <CardTitle className="font-headline text-primary">{service.title}</CardTitle>
                           <CardDescription className="text-primary font-semibold">{service.price}</CardDescription>
                         </CardHeader>
                         <CardContent className="flex-grow">
@@ -116,7 +116,7 @@ export default function ServicesPageContent() {
                            </div>
                         )}
                         <CardHeader>
-                          <CardTitle className="font-headline">{service.title}</CardTitle>
+                          <CardTitle className="font-headline text-primary">{service.title}</CardTitle>
                           <CardDescription className="text-primary font-semibold">{service.price}</CardDescription>
                         </CardHeader>
                         <CardContent className="flex-grow">
