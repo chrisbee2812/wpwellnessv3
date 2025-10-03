@@ -45,22 +45,22 @@ export default function ServiceDetailsDialog({ service, open, onOpenChange }: Se
             </div>
           )}
           <DialogHeader className="p-6 text-left">
-            <DialogTitle className="font-headline text-3xl">{service.title}</DialogTitle>
+            <DialogTitle className="font-headline text-primary text-3xl">{service.title}</DialogTitle>
             <p className="text-primary text-xl font-semibold pt-2">{service.price}</p>
             <DialogDescription asChild className="text-muted-foreground text-base pt-4 space-y-4">
               <div>
-                <p className="font-semibold text-foreground">{service.description}</p>
+                <p className="font-semibold text-primary">{service.description}</p>
                 {service.detailedDescription.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
               {service.subServices && service.subServices.length > 0 && (
                   <div className="pt-4">
-                    <h3 className="font-headline text-lg font-semibold text-foreground mb-2">Treatment Options</h3>
+                    <h3 className="font-headline text-lg text-primary font-semibold text-foreground mb-2">Treatment Options</h3>
                     <div className="space-y-3">
                       {service.subServices.map((sub, index) => (
                         <div key={index} className="flex justify-between items-center text-sm">
                           <div className='flex items-center gap-2'>
-                            <p className="font-medium text-foreground">{sub.name}</p>
+                            <p className="font-medium text-primary">{sub.name}</p>
                             <p className="text-muted-foreground">{sub.duration}</p>
                             {sub.details && (
                                 <Popover>
@@ -72,7 +72,7 @@ export default function ServiceDetailsDialog({ service, open, onOpenChange }: Se
                               )}
                           </div>
                           <div className="flex items-center gap-4">
-                            <p className="font-semibold text-foreground">{sub.price}</p>
+                            <p className="font-semibold text-primary">{sub.price}</p>
                             <Button variant="outline" size="sm" asChild>
                               <Link href={`/contact?subject=Booking enquiry: ${sub.name}`}>Book Now</Link>
                             </Button>

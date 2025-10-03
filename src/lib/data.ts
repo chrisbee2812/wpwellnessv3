@@ -76,6 +76,34 @@ export const services: Service[] = [
   },
   { 
     id: 's3', 
+    primaryCategory: 'Wellness', 
+    title: 'Facial & Skin Treatments', 
+    description: 'Various cosmetic treatments designed to achieve a smooth, radiant, and translucent complexion', 
+    detailedDescription: [
+      "Experience a range of facial and skin treatments designed to give you a smooth, radiant and translucent complexion.",
+      "Our Hydro Facial treatments cleanse, exfoliate, extract impurities and hydrate the skin, offering immediate results.",
+      "Our Carbon facial, exfoliates the skin, cleanses pores and stimulates collagen production for improved texture and firmness.",
+      "Our chemical facial exfoliates away dead or damaged skin, revealing the fresher, brighter, and more youthful-looking skin beneath."
+    ],
+    subTreatments: [],
+    price: 'from £20', 
+    imageId: 'service-wellness-1',
+    subServices: [
+        { name: 'Hydro Facial Mini', duration: '45 mins', price: '£60' },
+        { name: 'Hydro Facial Deluxe', duration: '60 mins', price: '£100' },
+        { name: 'Signature Hydro Facial', duration: '90 mins', price: '£120' },
+        { name: 'Glass Facial', duration: '60 mins', price: '£120' },
+        { name: 'Signature Glass Facial', duration: '2hrs +', price: '£200' },
+        { name: 'Allure Gold Therapy Facial', duration: '80 mins', price: '£140' },
+        { name: 'Lactocur + Therapy Facial', duration: '70 mins', price: '£110' },
+        { name: 'Carbon Peel', duration: '30 mins', price: '£50' },
+        { name: 'Chemical Peel (Face)', duration: '30 mins', price: '£60' },
+        { name: 'Chemical Peel (Face + Hands)', duration: '45 mins', price: '£70' },
+        { name: 'LED Nano Spray with Mini Facial', duration: '25 mins', price: '£20' },
+    ] 
+  },
+  { 
+    id: 's6', 
     primaryCategory: 'Face', 
     title: 'Skin Boosters & Eye Boosters', 
     description: 'Skin boosters and eye boosters designed to improve skin quality, hydration, and texture.', 
@@ -118,7 +146,7 @@ export const services: Service[] = [
         { name: 'Fat Dissolving Lemon Bottle', duration: '30 mins', price: '£140' },
         { name: 'LipoLab', duration: '30 mins', price: '£120' },
         { name: 'Aqualyx', duration: '30 mins', price: '£130' },
-        { name: 'Cellulite Removal Injections', duration: '30 mins', price: '£89' },
+        { name: 'Cellulite Removal Injections', duration: '30 mins', price: '£100' },
     ]
   },
   { 
@@ -140,31 +168,7 @@ export const services: Service[] = [
         { name: 'Vitamin B12', duration: '15 mins', price: '£25' },
         { name: 'Biotin', duration: '15 mins', price: '£35' },
     ]
-  },
-  { 
-    id: 's6', 
-    primaryCategory: 'Wellness', 
-    title: 'Facial & Skin Treatments', 
-    description: 'Various cosmetic treatments designed to achieve a smooth, radiant, and translucent complexion', 
-    detailedDescription: [
-      "Experience a range of facial and skin treatments designed to give you a smooth, radiant and translucent complexion.",
-      "Our Hydro Facial treatments cleanse, exfoliate, extract impurities and hydrate the skin, offering immediate results.",
-      "Our Carbon facial, exfoliates the skin, cleanses pores and stimulates collagen production for improved texture and firmness.",
-      "Our chemical facial exfoliates away dead or damaged skin, revealing the fresher, brighter, and more youthful-looking skin beneath."
-    ],
-    subTreatments: [],
-    price: 'from £20', 
-    imageId: 'service-wellness-1',
-    subServices: [
-        { name: 'Hydro Facial Mini', duration: '30 mins', price: '£60' },
-        { name: 'Hydro Facial Deluxe', duration: '60 mins', price: '£100' },
-        { name: 'Glass Facial', duration: '60 mins', price: '£120' },
-        { name: 'Carbon Peel', duration: '30 mins', price: '£50' },
-        { name: 'Chemical Peel (Face)', duration: '30 mins', price: '£60' },
-        { name: 'Chemical Peel (Face + Hands)', duration: '45 mins', price: '£70' },
-        { name: 'LED Nano Spray with Mini Facial', duration: '25 mins', price: '£20' },
-    ] 
-  },
+  },  
   { 
     id: 's7', 
     primaryCategory: 'Wellness', 
@@ -401,7 +405,7 @@ export const featuredCategories: FeaturedCategory[] = [
         'Lay back under the soft, flickering light with eyes gently closed. Each session is personalised to your needs — whether you’re seeking calm, energy reset, or emotional release. Most clients leave feeling peaceful, recharged, and often deeply moved.',
         'Ideal for those feeling overwhelmed, anxious, creatively blocked, or seeking a deep inner reset.'
     ],
-    imageId: 'pandora-light-therapy',
+    imageId: 'pandora-light-therapy-long',
     link: '/services?category=Wellness'
   },
   {
@@ -417,17 +421,47 @@ export const featuredCategories: FeaturedCategory[] = [
     imageId: 'earwax-removal',
     link: '/services?category=Mobile'
   },
-  // {
-  //   id: 'fc4',
-  //   title: 'Oberon Biofeedback Therapy, Harmonize Your Energy',
-  //   shortTitle: 'Oberon Biofeedback Therapy',
-  //   description: 'Oberon Biofeedback system is a non-invasive wellness tool that uses quantum frequency scanning to detect imbalances in the body.',
-  //   detailedDescription: [
-  //       'Our Oberon Biofeedback system is a non-invasive wellness tool that uses quantum frequency scanning to detect imbalances in the body — physically, emotionally, and energetically.',
-  //       'This advanced technology gently scans the body’s internal systems (organs, meridians, microbiome, chakras, and more) using headphones that transmit specific frequencies. It then compares your body’s responses to healthy reference data to highlight any areas of stress, deficiency, or disharmony.',
-  //       'Following the scan, targeted meta-therapy can be applied to help support energetic balance and stimulate the body’s natural self-healing processes.'
-  //   ],
-  //   imageId: 'oberon-biofeedback',
-  //   link: '/services?category=Wellness'
-  // }
+];
+
+export type SignatureTreatment = {
+  id: string;
+  title: string;
+  shortTitle?: string;
+  description: string;
+  detailedDescription?: string[];
+  imageId: string;
+  price: string;
+  link: string;
+};
+
+export const signatureTreatments: SignatureTreatment[] = [
+  {
+    id: 'st1',
+    title: 'Signature Glass Facial',
+    shortTitle: 'Signature Glass Facial',
+    description: 'Experience the ultimate luxury facial at West Park Wellness Studio',
+    detailedDescription: [
+        'Experience the ultimate luxury facial at West Park Wellness Studio. Our Signature Glass Facial blends advanced skin technology with Korean beauty rituals to deliver the flawless, luminous “glass skin” look.',
+        'This premium treatment combines deep cleansing, gentle resurfacing, skin booster infusion, and soothing recovery therapies — finishing with medical-grade LED light for radiant, long-lasting results.',
+        'Results: Clearer pores, smoother texture, deep hydration, lifted contours, and a crystal-clear glow that feels as good as it looks.'
+    ],
+    imageId: 'signature-treatment-1',
+    price: '£200 (2hrs+)',
+    link: '/services?category=Aesthetics'
+  },
+  {
+    id: 'st2',
+    title: 'Signature Hydro Facia',
+    shortTitle: 'Signature Hydro Facia',
+    description: 'Our most popular advanced treatment for deep cleansing, lifting, and hydration.',
+    detailedDescription: [
+        'Our most popular advanced treatment for deep cleansing, lifting, and hydration.',
+        'The Signature Hydro Facial combines exfoliation, Aqua Peel pore cleansing, radiofrequency tightening, EMS micro-lift, and targeted serum infusion — all performed using premium Korean professional beauty products.',
+        'Finished with a calming mask, this treatment delivers both results and relaxation.',
+        'Results: Clearer pores, smoother texture, firmer skin, and a deeply hydrated glow that lasts.'
+    ],
+    imageId: 'signature-treatment-2',
+    price: '£120 (90 mins)',
+    link: '/services?category=Wellness'
+  },  
 ];

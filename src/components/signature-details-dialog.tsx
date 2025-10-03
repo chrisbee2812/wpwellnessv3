@@ -12,37 +12,38 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import type { FeaturedCategory } from '@/lib/data';
+import type { SignatureTreatment } from '@/lib/data';
 import { getImageById } from '@/lib/data';
 
-interface CategoryDetailsDialogProps {
-  category: FeaturedCategory;
+interface SignatureDetailsDialogProps {
+  treatment: SignatureTreatment;
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
 
-export default function CategoryDetailsDialog({ category, open, onOpenChange }: CategoryDetailsDialogProps) {
-  const categoryImage = getImageById(category.imageId);
+export default function SignatureDetailsDialog({ treatment, open, onOpenChange }: SignatureDetailsDialogProps) {
+  const signatureImage = getImageById(treatment.imageId);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[625px]">
-        {categoryImage && (
+        {signatureImage && (
           <div className="relative w-full h-64 rounded-t-lg overflow-hidden">
             <Image
-              src={categoryImage.imageUrl}
-              alt={categoryImage.description}
+              src={signatureImage.imageUrl}
+              alt={signatureImage.description}
               layout="fill"
               objectFit="cover"
-              data-ai-hint={categoryImage.imageHint}
+              data-ai-hint={signatureImage.imageHint}
             />
           </div>
         )}
         <DialogHeader className="p-6 text-left">
-          <DialogTitle className="font-headline text-primary text-3xl">{category.title}</DialogTitle>
+          <DialogTitle className="font-headline text-primary text-3xl">{treatment.title}</DialogTitle>
+          <p className="text-primary text-xl font-semibold pt-2">{treatment.price}</p>
           <DialogDescription asChild className="text-muted-foreground text-base pt-4 space-y-4">
             <div>
-              {category.detailedDescription && category.detailedDescription.map((paragraph, index) => (
+              {treatment.detailedDescription && treatment.detailedDescription.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
@@ -50,7 +51,7 @@ export default function CategoryDetailsDialog({ category, open, onOpenChange }: 
         </DialogHeader>
         <DialogFooter className='p-6 pt-0'>
             <Button asChild>
-                <Link href={category.link}>
+                <Link href={treatment.link}>
                     View Services <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
             </Button>

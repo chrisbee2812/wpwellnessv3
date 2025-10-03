@@ -40,7 +40,7 @@ export default function StaffDetailsDialog({ member, open, onOpenChange }: Staff
           )}
           <div className="p-6">
             <DialogHeader className="text-left">
-              <DialogTitle className="font-headline text-3xl">{member.name}</DialogTitle>
+              <DialogTitle className="font-headline text-primary text-3xl">{member.name}</DialogTitle>
               <p className="text-primary text-xl font-semibold pt-1">{member.role}</p>
               <DialogDescription asChild className="text-muted-foreground text-base pt-4 space-y-6">
                 <div>
@@ -51,7 +51,7 @@ export default function StaffDetailsDialog({ member, open, onOpenChange }: Staff
                   </div>
 
                   <div className="mt-6">
-                    <h3 className="font-headline text-lg font-semibold text-foreground mb-2">Qualifications</h3>
+                    <h3 className="font-headline text-lg font-semibold text-primary mb-2">Qualifications</h3>
                     <ul className="list-disc list-inside space-y-1">
                       {member.qualifications.map((qual, index) => (
                         <li key={index}>{qual}</li>
@@ -60,7 +60,7 @@ export default function StaffDetailsDialog({ member, open, onOpenChange }: Staff
                   </div>
 
                   <div className="mt-6">
-                    <h3 className="font-headline text-lg font-semibold text-foreground mb-3">Specializes In</h3>
+                    <h3 className="font-headline text-lg font-semibold text-primary mb-3">Specializes In</h3>
                     <div className="flex flex-wrap gap-2">
                       {memberTreatments.map(treatment => (
                         treatment && <Badge key={treatment.id} variant="secondary">{treatment.title}</Badge>

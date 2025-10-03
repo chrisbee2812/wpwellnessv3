@@ -18,7 +18,7 @@ export default function PricingPage() {
     <div className="bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-headline font-bold">Price List</h1>
+          <h1 className="text-4xl md:text-5xl font-headline text-primary font-bold">Price List</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             Transparent pricing for our premium cosmetic services.
           </p>
@@ -31,10 +31,10 @@ export default function PricingPage() {
                   <div key={service.id}>
                     <div className="flex justify-between items-start gap-4">
                       <div>
-                        <h3 className="font-semibold text-lg">{service.title}</h3>
+                        <h3 className="font-semibold text-primary text-lg">{service.title}</h3>
                         <p className="text-sm text-muted-foreground">{service.description}</p>
                       </div>
-                      {!service.subServices && <p className="text-lg font-semibold text-foreground whitespace-nowrap">{service.price}</p>}
+                      {!service.subServices && <p className="text-lg font-semibold text-primary whitespace-nowrap">{service.price}</p>}
                     </div>
                     
                     {service.subServices && (
@@ -42,7 +42,7 @@ export default function PricingPage() {
                          {service.subServices.map((sub, subIndex) => (
                             <div key={subIndex} className="flex justify-between items-center">
                                 <div className='flex items-center gap-2'>
-                                    <p className="font-medium">{sub.name}</p>
+                                    <p className="font-medium text-primary">{sub.name}</p>
                                     <p className="text-sm text-muted-foreground">{sub.duration}</p>
                                     {sub.details && (
                                       <Popover>
@@ -54,7 +54,7 @@ export default function PricingPage() {
                                     )}
                                 </div>
                                 <div className="flex items-center gap-4">
-                                  <p className="font-semibold">{sub.price}</p>
+                                  <p className="font-semibold text-primary">{sub.price}</p>
                                   <Button variant="outline" size="sm" asChild>
                                     <Link href={`/contact?subject=Booking enquiry: ${sub.name}`}>Book Now</Link>
                                   </Button>

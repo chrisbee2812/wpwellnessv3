@@ -4,7 +4,6 @@ export type ImagePlaceholder = {
   id: string;
   description: string;
   imageUrl: string;
-  altImageUrl?: string;
   imageHint: string;
 };
 

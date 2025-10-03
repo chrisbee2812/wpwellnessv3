@@ -18,36 +18,36 @@
       "imageUrl": "/services-hero-bkg.webp",
       "imageHint": "smilling woman"
     },
+
     {
-      "id": "about-mission",
-      "description": "Natural ingredients like flower petals and oils arranged beautifully.",
-      "imageUrl": "https://picsum.photos/seed/mission/800/600",
-      "imageHint": "natural ingredients"
+      "id": "signature-treatment-1",
+      "description": "Image of a woman laying down relaxing with eyes closed.",
+      "imageUrl": "/sig-hydro-facial.webp",
+      "imageHint": "Signature Glass Facial"
     },
     {
-      "id": "modern-aesthetics",
+      "id": "signature-treatment-2",
       "description": "A close-up of a person receiving a gentle facial treatment.",
-      "imageUrl": "/modern-aesthetics.webp",
-      "imageHint": "facial treatment"
+      "imageUrl": "/hydro-facial.webp",
+      "imageHint": "Signature Hydro Facial"
     },
     {
-      "id": "pandora-light-therapy",
+      "id": "pandora-light-therapy-long",
       "description": "A woman lying, eyes closed, under light therapy equipment emitting a soft glow.",
-      "imageUrl": "/pandoralight.webp",
-      "altImageUrl": "/pandoralight-long.webp",
+      "imageUrl": "/pandoralight-long.webp",
       "imageHint": "pandora light therapy"
     },
     {
       "id": "earwax-removal",
       "description": "Ear under lighting having wax removed with specialized tool.",
-      "imageUrl": "/earwax-removal.webp",
+      "imageUrl": "/earwax-removal-long.webp",
       "imageHint": "earwax removal"
     },
     {
-      "id": "oberon-biofeedback",
-      "description": "The Oberon Biofeedback equipment.",
-      "imageUrl": "/oberon-biofeedback.webp",
-      "imageHint": "Oberon Biofeedback"
+      "id": "modern-aesthetics",
+      "description": "Modern aesthetics, woman receiving botox treatment.",
+      "imageUrl": "/modern-aesthetics2.webp",
+      "imageHint": "Modern Aesthetics"
     },
     {
       "id": "service-body-2",
