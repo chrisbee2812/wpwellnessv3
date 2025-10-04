@@ -50,70 +50,82 @@
       "imageHint": "Modern Aesthetics"
     },
     {
-      "id": "service-body-2",
-      "description": "Smooth stones and a towel on a massage table.",
-      "imageUrl": "https://picsum.photos/seed/body2/600/400",
-      "imageHint": "massage table"
+      "id": "anti-wrinkle",
+      "description": "Woman receiving anti wrinkle treatment.",
+      "imageUrl": "/anti-wrinkle.webp",
+      "imageHint": "Anti Wrinkle Treatment"
     },
     {
-      "id": "service-wellness-1",
-      "description": "Aromatherapy diffuser with essential oil bottles.",
-      "imageUrl": "https://picsum.photos/seed/wellness1/600/400",
-      "imageHint": "aromatherapy"
+      "id": "fillers",
+      "description": "Woman receiving lip filler injection.",
+      "imageUrl": "/lip-filler-injection.webp",
+      "imageHint": "Lip Filler Treatment"
     },
     {
-      "id": "service-wellness-2",
-      "description": "Hot stones arranged on a person's back.",
-      "imageUrl": "https://picsum.photos/seed/wellness2/600/400",
-      "imageHint": "hot stones"
+      "id": "facials",
+      "description": "Woman receiving facial mask.",
+      "imageUrl": "/facials.webp",
+      "imageHint": "Facial mask"
     },
     {
-      "id": "service-aesthetics-1",
-      "description": "A close-up of a syringe with a blurred background of a clinic.",
-      "imageUrl": "https://images.unsplash.com/photo-1608326389417-d3f9cc46de04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb3NtZXRpYyUyMGluamVjdGlvbnxlbnwwfHx8fDE3NTg3MjQ5MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cosmetic injection"
+      "id": "skin-boosters",
+      "description": "Man receiving a skin booster injection.",
+      "imageUrl": "/skin-boosters.webp",
+      "imageHint": "Skin booster injection"
     },
     {
-      "id": "service-aesthetics-2",
-      "description": "A woman's face with markings for dermal filler injections.",
-      "imageUrl": "https://images.unsplash.com/photo-1697649125798-3eba8abc933f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYWNpYWwlMjBmaWxsZXJzfGVufDB8fHx8MTc1ODcyNDkwNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "facial fillers"
+      "id": "fat-dissolving",
+      "description": "A woman receiving an under chin fat dissolving injection.",
+      "imageUrl": "/fat-dissolving.webp",
+      "imageHint": "Fat dissolving injection"
     },
     {
-      "id": "team-member-1",
-      "description": "A professional and friendly-looking woman.",
-      "imageUrl": "https://picsum.photos/seed/team1/400/400",
-      "imageHint": "professional woman"
+      "id": "vitamin-injection",
+      "description": "A vitamin b12 ampule and syringe.",
+      "imageUrl": "/vitamin-injection.webp",
+      "imageHint": "Vitamin Injection"
     },
     {
-      "id": "team-member-2",
-      "description": "A professional and friendly-looking man.",
-      "imageUrl": "https://picsum.photos/seed/team2/400/400",
-      "imageHint": "professional man"
+      "id": "hot-stone",
+      "description": "A woman receiving a hot stone massage.",
+      "imageUrl": "/hot-stone.webp",
+      "imageHint": "Hot stone massage"
     },
     {
-      "id": "team-member-3",
-      "description": "A professional and friendly-looking woman with a warm smile.",
-      "imageUrl": "https://picsum.photos/seed/team3/400/400",
-      "imageHint": "smiling woman"
+      "id": "pandora-light-therapy",
+      "description": "A woman receiving sitting under the pandora light system.",
+      "imageUrl": "/pandoralight.webp",
+      "imageHint": "pandora light therapy"
     },
     {
-      "id": "featured-category-mobile",
-      "description": "A therapist providing a treatment in a comfortable home setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1748369830019-5fa54b0ecb3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aG9tZSUyMHRyZWF0bWVudHxlbnwwfHx8fDE3NTg3MjQ5MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "home treatment"
+      "id": "eye-brow-threading",
+      "description": "A woman receiving eye brow threading treatment.",
+      "imageUrl": "/eye-brow-threading.webp",
+      "imageHint": "eyebrow threading"
     },
     {
-      "id": "featured-category-aesthetics",
-      "description": "A sophisticated and clinical setting for aesthetic treatments.",
-      "imageUrl": "https://images.unsplash.com/photo-1665231795856-769fb08a90bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGluaWMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTg3MjA3MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clinic interior"
+      "id": "cryopen",
+      "description": "A mole being removed with cryopen treatment.",
+      "imageUrl": "/cryopen.webp",
+      "imageHint": "cryopen treatment"
     },
     {
-      "id": "featured-category-facials",
-      "description": "A woman with a serene expression receiving a facial.",
-      "imageUrl": "https://images.unsplash.com/photo-1521146764736-56c929d59c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZXJlbmUlMjBmYWNpYWx8ZW58MHx8fHwxNzU4NzI0OTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "serene facial"
+      "id": "nano-needling",
+      "description": "A woman undergoing nano needling treatment.",
+      "imageUrl": "/nano-needling.webp",
+      "imageHint": "nano-needling treatment"
+    },
+    {
+      "id": "full-body-scrub",
+      "description": "A pair of legs being exfoliated.",
+      "imageUrl": "/full-body-scrub.webp",
+      "imageHint": "full body scrub treatment"
+    },
+    {
+      "id": "earwax-removal-short",
+      "description": "Ear under lighting having wax removed with specialized tool.",
+      "imageUrl": "/earwax-removal.webp",
+      "imageHint": "earwax removal"
     }
   ]
 }

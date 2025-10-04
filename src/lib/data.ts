@@ -46,7 +46,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £130', 
-    imageId: 'service-face-1',
+    imageId: 'anti-wrinkle',
     subServices: [
         { name: '1 Area', duration: '20 mins', price: '£130' },
         { name: '2 Areas', duration: '25 mins', price: '£160' },
@@ -65,8 +65,8 @@ export const services: Service[] = [
       "These non-surgical treatments are typically administered in areas around the eyes, mouth, nose, cheeks, lips, and jawline to smooth lines, plump lips, restore volume, and improve facial symmetry."
     ],
     subTreatments: [],
-    price: 'From $150',
-    imageId: 'service-aesthetics-2',
+    price: 'From £150',
+    imageId: 'fillers',
     subServices: [
         { name: 'Lip Filler', duration: '30 mins', price: '£180', details: 'Enhances lip volume and shape for a fuller, more defined look.' },
         { name: 'Marionette Lines', duration: '30 mins', price: '£150', details: 'Softens the lines that run from the corners of the mouth down to the chin.' },
@@ -87,7 +87,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £20', 
-    imageId: 'service-wellness-1',
+    imageId: 'facials',
     subServices: [
         { name: 'Hydro Facial Mini', duration: '45 mins', price: '£60' },
         { name: 'Hydro Facial Deluxe', duration: '60 mins', price: '£100' },
@@ -113,7 +113,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £70', 
-    imageId: 'service-face-3', 
+    imageId: 'skin-boosters', 
     subServices: [
         { name: 'Jalupro (Face + Eyes)', duration: '45 mins', price: '£170' },
         { name: 'Toskani', duration: '45 mins', price: '£140' },
@@ -141,7 +141,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £120', 
-    imageId: 'service-body-1',
+    imageId: 'fat-dissolving',
     subServices: [
         { name: 'Fat Dissolving Lemon Bottle', duration: '30 mins', price: '£140' },
         { name: 'LipoLab', duration: '30 mins', price: '£120' },
@@ -161,7 +161,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £30', 
-    imageId: 'service-body-2',
+    imageId: 'vitamin-injection',
     subServices: [
         { name: 'Vitamin D', duration: '15 mins', price: '£35' },
         { name: 'Vitamin C', duration: '15 mins', price: '£30' },
@@ -180,7 +180,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £40', 
-    imageId: 'service-wellness-2',
+    imageId: 'hot-stone',
     subServices: [
         { name: 'Hot Stone Massage', duration: '30 mins', price: '£40' },
         { name: 'Foot Therapy (Wash, Exfoliate, Massage, Mask, Moisturiser)', duration: '45 mins', price: '£45' },
@@ -199,7 +199,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £25',
-    imageId: 'service-aesthetics-1',
+    imageId: 'pandora-light-therapy',
     subServices: [
         { name: 'Pandora Star Light Therapy – Intro', duration: '20 mins', price: '£25' },
         { name: 'Pandora Star Light Therapy – Full', duration: '40 mins', price: '£45' },
@@ -218,7 +218,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £7',
-    imageId: 'service-aesthetics-2',
+    imageId: 'eye-brow-threading',
     subServices: [
         { name: 'Brow Lamination', duration: '30 mins', price: '£25' },
         { name: 'Brow Lamination with Henna', duration: '40 mins', price: '£30' },
@@ -239,7 +239,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £50', 
-    imageId: 'service-wellness-2',
+    imageId: 'cryopen',
     subServices: [
         { name: 'Skin Tags', duration: '15–30 mins', price: 'From £50' },
         { name: 'Cherry Angiomas', duration: '15–30 mins', price: 'From £50' },
@@ -260,7 +260,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £45',
-    imageId: 'service-aesthetics-1',
+    imageId: 'nano-needling',
     subServices: [
         { name: 'Microneedling + Mini Facial + Standard Serum', duration: '45 mins', price: 'From £45' },
         { name: 'Microneedling + Mini Facial + Premium Serum', duration: '60 mins', price: 'From £65' },
@@ -279,7 +279,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £30',
-    imageId: 'service-aesthetics-2',
+    imageId: 'full-body-scrub',
     subServices: [
         { name: 'Full Body Scrub', duration: '45 mins', price: '£50' },
         { name: 'Hydro Jelly Mask Facial Premium', duration: '40 mins', price: '£50' },
@@ -298,7 +298,7 @@ export const services: Service[] = [
     ],
     subTreatments: [],
     price: 'from £30',
-    imageId: 'service-aesthetics-2',
+    imageId: 'earwax-removal-short',
     isMobile: true 
   },
 ];

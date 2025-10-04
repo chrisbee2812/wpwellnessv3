@@ -27,23 +27,11 @@ interface ServiceDetailsDialogProps {
 }
 
 export default function ServiceDetailsDialog({ service, open, onOpenChange }: ServiceDetailsDialogProps) {
-  const serviceImage = getImageById(service.imageId);
-
+  
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[625px] p-0">
         <ScrollArea className="max-h-[90vh]">
-          {serviceImage && (
-            <div className="relative w-full h-64">
-              <Image
-                src={serviceImage.imageUrl}
-                alt={serviceImage.description}
-                fill
-                objectFit="cover"
-                data-ai-hint={serviceImage.imageHint}
-              />
-            </div>
-          )}
           <DialogHeader className="p-6 text-left">
             <DialogTitle className="font-headline text-primary text-3xl">{service.title}</DialogTitle>
             <p className="text-primary text-xl font-semibold pt-2">{service.price}</p>

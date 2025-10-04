@@ -50,11 +50,9 @@ export default function SignatureDetailsDialog({ treatment, open, onOpenChange }
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className='p-6 pt-0'>
-            <Button asChild>
-                <Link href={treatment.link}>
-                    View Services <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-            </Button>
+          <Button variant="outline" size="sm" asChild>
+            <Link href={`/contact?subject=Booking enquiry: ${treatment.title}`}>Book Now</Link>
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

@@ -58,7 +58,7 @@ export default function StaffPage() {
                 <Card 
                   key={member.id} 
                   onClick={() => handleCardClick(member)}
-                  className="text-center border-0 bg-card shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                  className="text-center bg-card shadow-sm hover:shadow-xl transition-shadow duration-300 cursor-pointer"
                 >
                   <CardContent className="p-6">
                     {memberImage && (
