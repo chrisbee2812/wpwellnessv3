@@ -126,6 +126,24 @@
       "description": "Ear under lighting having wax removed with specialized tool.",
       "imageUrl": "/earwax-removal.webp",
       "imageHint": "earwax removal"
+    },
+    {
+      "id": "about-mission",
+      "description": "West Park wellness studio logo.",
+      "imageUrl": "/logo.png",
+      "imageHint": "west park logo"
+    },
+    {
+      "id": "about-promise",
+      "description": "Burning candles with small branch with lights on behind.",
+      "imageUrl": "/promise.webp",
+      "imageHint": "burning candles"
+    },
+    {
+      "id": "about-whyus",
+      "description": "A relaxed woman lying in the beautiful outdoors.",
+      "imageUrl": "/whyus.webp",
+      "imageHint": "a sea of beauty and tranquility"
     }
   ]
 }

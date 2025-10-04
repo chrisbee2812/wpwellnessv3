@@ -39,7 +39,7 @@ export default function StaffPage() {
           <h1 className="text-4xl md:text-6xl text-primary font-headline font-bold tracking-tight max-w-xl">
             Meet Our Experts
           </h1>
-          <p className="mt-4 text-lg md:text-xl text-secondary max-w-xl">
+          <p className="mt-4 text-lg md:text-xl max-w-xl">
             Our skilled and passionate team is the heart of West Park Wellness Studio.
           </p>
         </div>          

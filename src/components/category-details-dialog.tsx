@@ -51,7 +51,7 @@ export default function CategoryDetailsDialog({ category, open, onOpenChange }: 
         <DialogFooter className='p-6 pt-0'>
             <Button asChild>
                 <Link href={category.link}>
-                    View Services <ArrowRight className="ml-2 h-5 w-5" />
+                    View {category.category} Services <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
             </Button>
         </DialogFooter>

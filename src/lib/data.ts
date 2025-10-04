@@ -119,16 +119,16 @@ export const services: Service[] = [
     price: 'from £70', 
     imageId: 'skin-boosters', 
     subServices: [
-        { name: 'Jalupro (Face + Eyes)', duration: '45 mins', price: '£170' },
-        { name: 'Toskani', duration: '45 mins', price: '£140' },
-        { name: 'Profhilo', duration: '45 mins', price: '£160' },
-        { name: 'Lumi Pro', duration: '45 mins', price: '£140' },
-        { name: 'Seventy Hyal', duration: '45 mins', price: '£140' },
+        { name: 'Jalupro (Face + Eyes)', duration: '45 mins', price: '£170', details: "Jalupro is designed to improve skin quality by stimulating the body's natural production of collagen and elastin. Contains hyaluronic acid, amino acids and peptides." },
+        { name: 'Toskani', duration: '45 mins', price: '£140', details: 'Toskani is a brand of hyaluronic acid skin boosters. It is designed to degrade more slowly, providing longer-lasting results' },
+        { name: 'Profhilo', duration: '45 mins', price: '£160', details: 'Profhilo is a hyaluronic acid (HA) skin booster used for bio-remodelling—a treatment that deeply hydrates and improves skin quality by stimulating collagen and elastin production.' },
+        { name: 'Lumi Pro', duration: '45 mins', price: '£140', details: 'Lumi Pro is a high-concentration hyaluronic acid skin booster. It delivers intense moisture, stimulates collagen and elastin production, and improves skin texture, firmness, and radiance.' },
+        { name: 'Seventy Hyal', duration: '45 mins', price: '£140', details: 'Seventy Hyal 2000 is a hyaluronic acid (HA) skin booster designed for deep hydration and skin rejuvenation. It targets the physiological loss of HA in aging skin.' },
         { name: 'Regevenue', duration: '45 mins', price: '£140' },
-        { name: 'Lemon Bottle', duration: '45 mins', price: '£140' },
-        { name: 'Sosum', duration: '45 mins', price: '£140' },
-        { name: 'Lumi Eyes', duration: '30 mins', price: '£90' },
-        { name: 'Ami Eyes', duration: '30 mins', price: '£70' },
+        { name: 'Lemon Bottle', duration: '45 mins', price: '£140', details: 'Lemon Bottle is a multi-component skin booster designed for deep hydration, brightening, and anti-aging. It combines hyaluronic acid (HA), 11 amino acids, 4 peptides, 8 vitamins, and antioxidants to nourish the skin at a cellular level and stimulate collagen and elastin production.' },
+        { name: 'Sosum', duration: '45 mins', price: '£140', details: 'Sosum is a premium hyaluronic acid (HA) skin booster brand designed for deep hydration, skin revitalization, and anti-aging.' },
+        { name: 'Lumi Eyes', duration: '30 mins', price: '£90', details: 'Lumi Eyes is a polynucleotide based skin booster specifically designed for the delicate under-eye area. It is a tissue regenerator that repairs and revitalizes thin, aging skin to reduce dark circles, fine lines, puffiness, and signs of fatigue.' },
+        { name: 'Ami Eyes', duration: '30 mins', price: '£70', details: 'Ami Eyes is a polynucleotide based skin booster derived from salmon DNA, designed to rejuvenate the delicate under-eye area and tear trough. It works by stimulating collagen and elastin production, improving skin elasticity, hydration, and texture.' },
         { name: 'Jalupro (Under Eye)', duration: '30 mins', price: '£120' },
     ]
   },
@@ -169,10 +169,10 @@ export const services: Service[] = [
     price: 'from £30', 
     imageId: 'vitamin-injection',
     subServices: [
-        { name: 'Vitamin D', duration: '15 mins', price: '£35' },
-        { name: 'Vitamin C', duration: '15 mins', price: '£30' },
-        { name: 'Vitamin B12', duration: '15 mins', price: '£25' },
-        { name: 'Biotin', duration: '15 mins', price: '£35' },
+        { name: 'Vitamin D', duration: '15 mins', price: '£35', details: 'An essential vitamin, benefiting bone health, immune support, mood regulation, muscle function and more.' },
+        { name: 'Vitamin C', duration: '15 mins', price: '£30', details: 'A powerful anitoxidant, providing immune support, collagen synthesis, skin health and more.' },
+        { name: 'Vitamin B12', duration: '15 mins', price: '£25', details: 'Vitamin B12 is essential for brain function, nerve health, and red blood cell formation. It aids energy production and mood regulation.' },
+        { name: 'Biotin', duration: '15 mins', price: '£35', details: 'Biotin (Vitamin B7) is a water-soluble B-vitamin essential for converting food into energy and maintaining healthy hair, skin, and nails.' },
     ]
   },  
   { 
@@ -388,6 +388,7 @@ export type FeaturedCategory = {
   id: string;
   title: string;
   shortTitle?: string;
+  category: string;
   description: string;
   detailedDescription?: string[];
   imageId: string;
@@ -399,6 +400,7 @@ export const featuredCategories: FeaturedCategory[] = [
     id: 'fc1',
     title: 'Modern Aesthetics, Where Beauty Blooms',
     shortTitle: 'Modern Aesthetics',
+    category: 'Aesthetics',
     description: 'From rejuvenating Botox treatments to the subtle perfection of fillers, our services are designed to enhance your natural beauty and restore a youthful radiance.',
     detailedDescription: [
         'We believe in the transformative power of aesthetics, bringing together science and artistry to redefine and celebrate your individual allure. Join us on this journey to discover the beauty that goes beyond skin deep, an experience crafted with precision, care, and a touch of aesthetic magic.',
@@ -411,6 +413,7 @@ export const featuredCategories: FeaturedCategory[] = [
     id: 'fc2',
     title: 'Pandora Star Light Therapy, A Journey Beyond Relaxation',
     shortTitle: 'Pandora Star Light Therapy',
+    category: 'Wellness',
     description: 'Step into a world beyond ordinary relaxation with Pandora Star Light Therapy — an advanced light meditation experience that uses flickering white light to guide your brain into deeply restorative states.',
     detailedDescription: [
         'Step into a world beyond ordinary relaxation with Pandora Star Light Therapy — an advanced light meditation experience that uses flickering white light to guide your brain into deeply restorative states. Whether you’re seeking clarity, relaxation, emotional release, or a shift in consciousness, this 30-minute journey invites you to reconnect with your true self.',
@@ -424,9 +427,10 @@ export const featuredCategories: FeaturedCategory[] = [
     id: 'fc3',
     title: 'Earwax Liberation, Hear the World Anew',
     shortTitle: 'Earwax Liberation',
+    category: 'Mobile',
     description: 'Experience the soothing harmony of a clean auditory canvas, ensuring your ears are free to absorb the sounds of life with crystal-clear precision.',
     detailedDescription: [
-        'Experience the soothing harmony of a clean auditory canvas, ensuring your ears are free to absorb the sounds of life with crystal-clear precision. Our gentle earwax removal service is designed to provide relief from discomfort and enhance your hearing clarity.',
+        'Experience the soothing harmony of a clean auditory canvas, ensuring your ears are free to absorb the sounds of life with crystal-clear precision. Our gentle earwax removal service can be carried out in our clinic, or as a mobile service we can come to perform the treatment in the comfort of your own home. It is designed to provide relief from discomfort and enhance your hearing clarity.',
         'Using safe and effective techniques, we carefully remove excess earwax buildup, promoting better ear health and preventing potential complications. Whether you\'re experiencing muffled hearing, tinitus or discomfort, our professional care will leave your ears feeling refreshed and revitalized.',
         'Ideal for those experiencing tinitus or other hearing difficulties, discomfort, or seeking routine ear care.'
     ],
@@ -463,8 +467,8 @@ export const signatureTreatments: SignatureTreatment[] = [
   },
   {
     id: 'st2',
-    title: 'Signature Hydro Facia',
-    shortTitle: 'Signature Hydro Facia',
+    title: 'Signature Hydro Facial',
+    shortTitle: 'Signature Hydro Facial',
     description: 'Our most popular advanced treatment for deep cleansing, lifting, and hydration.',
     detailedDescription: [
         'Our most popular advanced treatment for deep cleansing, lifting, and hydration.',

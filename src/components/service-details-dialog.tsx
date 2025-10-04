@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/popover"
 import { ScrollArea } from "@/components/ui/scroll-area";
 import type { Service } from '@/lib/data';
-import { getImageById } from '@/lib/data';
 import { Button } from './ui/button';
 
 interface ServiceDetailsDialogProps {
@@ -43,7 +42,7 @@ export default function ServiceDetailsDialog({ service, open, onOpenChange }: Se
                 ))}
               {service.subServices && service.subServices.length > 0 && (
                   <div className="pt-4">
-                    <h3 className="font-headline text-lg text-primary font-semibold text-foreground mb-2">Treatment Options</h3>
+                    <h3 className="font-headline text-lg text-primary font-semibold mb-2">Treatment Options</h3>
                     <div className="space-y-3">
                       {service.subServices.map((sub, index) => (
                         <div key={index} className="flex justify-between items-center text-sm">
