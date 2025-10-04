@@ -36,7 +36,8 @@ export type ServiceOverview = {
 export const services: Service[] = [
   { 
     id: 's1', 
-    primaryCategory: 'Face', 
+    primaryCategory: 'Face',
+    secondaryCategories: ['Aesthetics'],
     title: 'Anti-Wrinkle Injections', 
     description: 'Anti-wrinkle injections are a popular cosmetic treatment used to reduce the appearance of wrinkles.', 
     detailedDescription: [
@@ -56,7 +57,8 @@ export const services: Service[] = [
   },
   { 
     id: 's2', 
-    primaryCategory: 'Face', 
+    primaryCategory: 'Face',
+    secondaryCategories: ['Aesthetics'],
     title: 'Dermal Fillers', 
     description: 'Dermal fillers are used to add volume to the skin, fill wrinkles, and enhance facial features for a more youthful appearance.', 
     detailedDescription: [
@@ -76,7 +78,8 @@ export const services: Service[] = [
   },
   { 
     id: 's3', 
-    primaryCategory: 'Wellness', 
+    primaryCategory: 'Face',
+    secondaryCategories: ['Aesthetics'], 
     title: 'Facial & Skin Treatments', 
     description: 'Various cosmetic treatments designed to achieve a smooth, radiant, and translucent complexion', 
     detailedDescription: [
@@ -104,7 +107,8 @@ export const services: Service[] = [
   },
   { 
     id: 's6', 
-    primaryCategory: 'Face', 
+    primaryCategory: 'Face',
+    secondaryCategories: ['Aesthetics'],
     title: 'Skin Boosters & Eye Boosters', 
     description: 'Skin boosters and eye boosters designed to improve skin quality, hydration, and texture.', 
     detailedDescription: [
@@ -130,7 +134,8 @@ export const services: Service[] = [
   },
   { 
     id: 's4', 
-    primaryCategory: 'Body', 
+    primaryCategory: 'Body',
+    secondaryCategories: ['Aesthetics', 'Wellness'],
     title: 'Fat Dissolving Injections', 
     description: 'Fat dissolving injections are a minimally invasive cosmetic treatment designed to break down fat cells in specific areas of the body.', 
     detailedDescription: [
@@ -151,7 +156,8 @@ export const services: Service[] = [
   },
   { 
     id: 's5', 
-    primaryCategory: 'Body', 
+    primaryCategory: 'Wellness',
+    secondaryCategories: ['Body'],
     title: 'Vitamin Injections', 
     description: 'Vitamin injections deliver essential nutrients directly into the bloodstream, for fast and efficient absorption.', 
     detailedDescription: [
@@ -171,7 +177,8 @@ export const services: Service[] = [
   },  
   { 
     id: 's7', 
-    primaryCategory: 'Wellness', 
+    primaryCategory: 'Wellness',
+    secondaryCategories: ['Body'],
     title: 'Massage & Holistic Therapies', 
     description: 'Experience our incredible hot stone massage, or indulgent foot therapy.', 
     detailedDescription: [
@@ -209,6 +216,7 @@ export const services: Service[] = [
   {
     id: 's9',
     primaryCategory: 'Aesthetics',
+    secondaryCategories: ['Face'],
     title: 'Brows, Lashes & Threading',
     description: 'Experience our many eyebrow and eyelash treatments.',
     detailedDescription: [
@@ -231,7 +239,8 @@ export const services: Service[] = [
   },
   { 
     id: 's10', 
-    primaryCategory: 'Wellness', 
+    primaryCategory: 'Aesthetics',
+    secondaryCategories: ['Face', 'Body'],
     title: 'Cryopen Lesion Removal', 
     description: 'Our safe and precise removal of benign skin lesions.', 
     detailedDescription: [
@@ -251,7 +260,8 @@ export const services: Service[] = [
   },
   {
     id: 's11',
-    primaryCategory: 'Aesthetics',
+    primaryCategory: 'Face',
+    secondaryCategories: ['Aesthetics'],
     title: 'Advanced Needling Treatments',
     description: 'Reduce the appearance of facial wrinkles with this popular injectable treatment.',
     detailedDescription: [
@@ -270,7 +280,8 @@ export const services: Service[] = [
   },
   {
     id: 's12',
-    primaryCategory: 'Aesthetics',
+    primaryCategory: 'Body',
+    secondaryCategories: ['Wellness', 'Aesthetics', 'Face'],
     title: 'Body Treatments',
     description: 'Restore volume and fullness to the face, creating a more youthful appearance.',
     detailedDescription: [
@@ -288,7 +299,8 @@ export const services: Service[] = [
   },
   {
     id: 's13',
-    primaryCategory: 'Aesthetics',
+    primaryCategory: 'Wellness',
+    secondaryCategories: ['Body'],
     title: 'Ear Wax Removal',
     description: 'Restore your hearing with our earwax suction treatment.',
     detailedDescription: [
