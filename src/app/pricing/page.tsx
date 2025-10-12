@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { services } from '@/lib/data';
 import { HelpCircle } from 'lucide-react';

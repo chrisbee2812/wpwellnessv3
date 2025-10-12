@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ArrowRight } from 'lucide-react';
 import type { SignatureTreatment } from '@/lib/data';
 import { getImageById } from '@/lib/data';
 

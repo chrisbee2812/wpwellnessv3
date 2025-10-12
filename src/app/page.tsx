@@ -3,10 +3,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Gem, Leaf, ShieldCheck, Car } from 'lucide-react';
+import { ArrowRight, Gem, Leaf, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { services, getImageById, Service, featuredCategories, FeaturedCategory, signatureTreatments, SignatureTreatment } from '@/lib/data';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { getImageById, Service, featuredCategories, FeaturedCategory, signatureTreatments, SignatureTreatment } from '@/lib/data';
 import ServiceDetailsDialog from '@/components/service-details-dialog';
 import CategoryDetailsDialog from '@/components/category-details-dialog';
 import SignatureTreatmentDetailsDialog from '@/components/signature-details-dialog';
