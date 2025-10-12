@@ -337,7 +337,7 @@ export const teamMembers: TeamMember[] = [
       "Becky is the founder of West Park Wellness Studio, where she combines her passion for holistic health with advanced wellness technology.",
       "With training in biofeedback, skincare, and non-invasive treatments, she helps clients restore balance in both body and mind. Becky believes in creating a safe, welcoming space where every client feels cared for, respected, and empowered on their journey to healing and confidence."
     ],
-    qualifications: ["Licensed Master Esthetician", "Certified in Advanced Chemical Peels", "HydraFacial Master Certified"],
+    qualifications: ["Anatomy and Physiology Levels 3, 4 and 5", "Earwax removal with Tympa Health", "Foundation Aesthetics, Botox Dermal Fillers", "Advanced Botox", "Chemical Peels, Tattoo Removal and Carbon Laser Peel from Enhance Me Academy", "Skin Boosters and Vitamin Injections from Elite Manchester", "Hydrodermaebrassion/Korean Glass Facial", "Skin Tag Removal"],    
     treatments: ["s1", "s2", "s3", "s9"]
   },
   { 
@@ -347,9 +347,9 @@ export const teamMembers: TeamMember[] = [
     imageId: 'team-member-2',
     bio: [
       "Katie is a fully qualified beautician with over 6 years of experience in the beauty industry.",
-      "She specialises in brows and LVL lash lifts, helping clients enhance their natural features with precision and care. Known for her attention to detail and friendly approach, Katie ensures every client feels comfortable and leaves with a boost of confidence."
+      "She specialises in brows and LVL lash lifts, helping clients enhance their natural features with precision and care. Known for her attention to detail and friendly approach, Katie ensures every client feels comfortable and leaves with a boost of confidence.",
     ],
-    qualifications: ["Licensed Massage Therapist", "Certified in Hot Stone Therapy", "Aromatherapy Specialist"],
+    qualifications: ["Licensed Master Esthetician", "Certified in Advanced Chemical Peels", "HydraFacial Master Certified"],
     treatments: ["s4", "s5", "s6", "s7"]
   },
   // { 
