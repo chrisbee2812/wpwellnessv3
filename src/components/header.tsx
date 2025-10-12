@@ -86,8 +86,8 @@ export default function Header() {
         </div>
       </div>
       
-      <div className="h-24 w-full z-50">
-        <div className="flex items-center justify-between bg-background w-full px-12">
+      <div className="h-24 w-full z-50 flex items-center justify-between bg-background px-12">
+        {/* <div className="flex items-center justify-between bg-background w-full px-12"> */}
             <Link href="/" className="flex items-center space-x-2">
                 <Image
                   src="/logo.png"
@@ -128,7 +128,7 @@ export default function Header() {
                 <NavLink key="/contact" href="/contact">
                   Contact Us
                 </NavLink>
-            </div>
+            {/* </div> */}
         </div>
 
         <div className="flex flex-1 items-center justify-end md:hidden">
@@ -146,8 +146,7 @@ export default function Header() {
                   className="mb-8 flex items-center space-x-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Sparkles className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline text-lg">LumiSkin</span>
+                  <span className="font-bold font-headline text-base">West Park Wellness Studio</span>
                 </Link>
                 <nav className="flex flex-col space-y-4">
                   {navLinks.map((link) => (
