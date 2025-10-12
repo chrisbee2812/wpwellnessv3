@@ -1,7 +1,7 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
-export type ServiceCategory = 'Face' | 'Body' | 'Wellness' | 'Aesthetics';
+export type ServiceCategory = 'Face' | 'Aesthetics' | 'Body' | 'Wellness';
 
 export type SubService = {
   name: string;
