@@ -26,8 +26,9 @@ export default function SignatureDetailsDialog({ treatment, open, onOpenChange }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <ScrollArea className="max-h-[90vh]">          
+               
         <DialogContent className="sm:max-w-[625px]">
+          <ScrollArea className="max-h-[90vh]"> 
           {signatureImage && (
             <div className="relative w-full h-64 rounded-t-lg overflow-hidden">
               <Image
@@ -55,8 +56,9 @@ export default function SignatureDetailsDialog({ treatment, open, onOpenChange }
               <Link href={`/contact?subject=Booking enquiry: ${treatment.title}`}>Book Now</Link>
             </Button>
           </DialogFooter>
+          </ScrollArea>
         </DialogContent>
-      </ScrollArea>
+      
     </Dialog>
   );
 }
