@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
+import Image from 'next/image';
 import ContactForm from "@/components/contact-form";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 import { Skeleton } from '@/components/ui/skeleton';
 
 function ContactFormSkeleton() {
@@ -83,6 +84,43 @@ export default function ContactPage() {
                     <p className="text-muted-foreground">07706 424469</p>
                 </div>
              </div>
+             <h2 className="text-2xl text-primary font-headline font-bold">Social Media</h2>
+             <a href="https://www.facebook.com/Westparkwellnessstudio" target='_blank' aria-label="Facebook">
+              <div className="flex my-6 items-center gap-4">
+                  <div className="bg-primary/20 p-3 rounded-full">
+                      <Facebook className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                      <h3 className="font-semibold text-primary">Facebook</h3>
+                  </div>
+              </div>
+              </a>
+             <a href="https://www.instagram.com/west_park_wellness_studio?igsh=MXdsNnNrY2gzZzdvcQ==" target='_blank' aria-label="Instagram">
+                <div className="flex my-6 items-center gap-4">
+                    <div className="bg-primary/20 p-3 rounded-full">
+                        <Instagram className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                        <h3 className="font-semibold text-primary">Instagram</h3>
+                    </div>
+                </div>
+              </a>
+             <a href="https://www.tiktok.com/@westparkwellnesss" target='_blank' aria-label="TikTok">
+                <div className="flex my-6 items-center gap-4">
+                    <div className="bg-primary/20 p-3 rounded-full">
+                        <Image
+                          src="/tiktok-primary.png"
+                          alt="TikTok Logo"
+                          width={50}
+                          height={50}
+                          className="h-6 w-6 text-primary"
+                        />
+                    </div>
+                    <div>
+                        <h3 className="font-semibold text-primary">TikTok</h3>
+                    </div>
+                </div>
+             </a>
           </div>
           <Suspense fallback={<ContactFormSkeleton />}>
             <ContactForm />

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Twitter, Instagram, Facebook } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -26,13 +26,19 @@ const Footer = () => {
               <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
             </nav>
             <div className="flex space-x-4">
-              <a href="#" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="https://www.tiktok.com/@westparkwellnesss" target='_blank' aria-label="TikTok">
+                <Image
+                  src="/tiktok.png"
+                  alt="TikTok Logo"
+                  width={50}
+                  height={50}
+                  className="h-5 w-5"
+                />
               </a>
-              <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/west_park_wellness_studio?igsh=MXdsNnNrY2gzZzdvcQ==" target='_blank' aria-label="Instagram">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/Westparkwellnessstudio" target='_blank' aria-label="Facebook">
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
