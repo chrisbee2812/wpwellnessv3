@@ -349,8 +349,8 @@ export const teamMembers: TeamMember[] = [
       "Katie is a fully qualified beautician with over 6 years of experience in the beauty industry.",
       "She specialises in brows and LVL lash lifts, helping clients enhance their natural features with precision and care. Known for her attention to detail and friendly approach, Katie ensures every client feels comfortable and leaves with a boost of confidence.",
     ],
-    qualifications: ["Licensed Master Esthetician", "Certified in Advanced Chemical Peels", "HydraFacial Master Certified"],
-    treatments: ["s4", "s5", "s6", "s7"]
+    qualifications: [],
+    treatments: ["s9"]
   },
   // { 
   //   id: 't3', 

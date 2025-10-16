@@ -49,16 +49,18 @@ export default function StaffDetailsDialog({ member, open, onOpenChange }: Staff
                       <p key={index}>{paragraph}</p>
                     ))}
                   </div>
-
-                  <div className="mt-6">
-                    <h3 className="font-headline text-lg font-semibold text-primary mb-2">Qualifications</h3>
-                    <ul className="list-disc list-inside space-y-1">
-                      {member.qualifications.map((qual, index) => (
-                        <li key={index}>{qual}</li>
-                      ))}
-                    </ul>
-                  </div>
-
+                  {member.qualifications.length > 0 && (
+                    <>
+                      <div className="mt-6">
+                        <h3 className="font-headline text-lg font-semibold text-primary mb-2">Qualifications</h3>
+                        <ul className="list-disc list-inside space-y-1">
+                          {member.qualifications.map((qual, index) => (
+                            <li key={index}>{qual}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </>
+                  )}
                   <div className="mt-6">
                     <h3 className="font-headline text-lg font-semibold text-primary mb-3">Specializes In</h3>
                     <div className="flex flex-wrap gap-2">

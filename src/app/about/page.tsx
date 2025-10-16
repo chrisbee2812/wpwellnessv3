@@ -55,6 +55,9 @@ export default function AboutPage() {
                 When you choose West Park Wellness Studio, you can expect:
               </p>
               <ul className="text-muted-foreground leading-relaxed">
+                <li className="mb-4"><strong>A Fully Insured Service</strong><p>Our insurance covers all of our treatments. Please ask for more information.</p></li>
+                <li className="mb-4"><strong>CRB/DBS checked staff</strong><p>All our staff have undergone and have a current and clear DBS check. Please ask for more information.</p></li>
+                <li className="mb-4"><strong>Experienced, Qualified Practitioners</strong><p>Our team is highly trained and experienced in their respective fields, ensuring you receive the best care possible.</p></li>
                 <li className="mb-4"><strong>Your Safety is Our Priority</strong><p>A commitment to the highest standards of hygiene and practice, with qualified practitioners who put your well-being first.</p></li>
                 <li className="mb-4"><strong>Results That Look Like You</strong><p>Expert artistry focused on enhancing your natural beauty for a refreshed, never artificial, outcome.</p></li>
                 <li className="mb-4"><strong>A Plan Made Just For You</strong><p>A personalized consultation and treatment plan built around your individual goals, not a one-size-fits-all menu.</p></li>
