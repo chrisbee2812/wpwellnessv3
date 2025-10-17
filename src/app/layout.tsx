@@ -3,6 +3,9 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 export const metadata: Metadata = {
   title: 'West Park Wellness Studio',
@@ -26,6 +29,8 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <Toaster />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
