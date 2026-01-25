@@ -313,6 +313,26 @@ export const services: Service[] = [
     imageId: 'earwax-removal-short',
     isMobile: true 
   },
+  {
+    id: 's14',
+    primaryCategory: 'Aesthetics',
+    secondaryCategories: ['Body'],
+    title: 'EMS Body Sculpting',
+    description: 'Targeted electrical muscle stimulation to tone, firm and strengthen the treated area.',
+    detailedDescription: [
+      'This advanced EMS treatment uses targeted electrical muscle stimulation to activate and contract the muscles — helping to tone, firm and strengthen the treated area.',
+      'Ideal for those wanting a more sculpted, toned appearance as part of their body-confidence journey. Common treatment areas include the abdomen, buttocks, thighs, and arms.',
+      'Multiple sessions are recommended for optimal results, with each session lasting around 30 minutes.'
+    ],
+    subTreatments: [],
+    price: '£70 per session',
+    imageId: 'EMS',
+    subServices: [
+        { name: 'Single Session', duration: '30 mins', price: '£70' },
+        { name: 'Course of 5 sessions', duration: '30 mins ea', price: '£300' },
+        { name: 'Course of 10 sessions', duration: '30 mins ea', price: '£530' },
+    ]
+  },
 ];
 
 export const serviceCategories = ['Face', 'Body', 'Wellness', 'Aesthetics', 'Mobile'];

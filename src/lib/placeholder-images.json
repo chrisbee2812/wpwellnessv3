@@ -144,6 +144,12 @@
       "description": "A relaxed woman lying in the beautiful outdoors.",
       "imageUrl": "/whyus.webp",
       "imageHint": "a sea of beauty and tranquility"
+    },
+    {
+      "id": "EMS",
+      "description": "Abdomen with EMS system attached.",
+      "imageUrl": "/ems.webp",
+      "imageHint": "EMS body sculpting"
     }
   ]
 }
