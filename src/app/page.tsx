@@ -116,7 +116,7 @@ export default function Home() {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-12 md:py-16 bg-muted">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-center text-primary mb-12">
               The West Park Wellness Studio Difference
@@ -249,7 +249,7 @@ export default function Home() {
         
 
         {/* Call to Action Section */}
-        <section className="py-12 md:py-16 bg-muted">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl text-primary font-headline font-bold mb-4">
               Ready to Glow?
