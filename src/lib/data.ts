@@ -316,7 +316,7 @@ export const services: Service[] = [
   {
     id: 's14',
     primaryCategory: 'Aesthetics',
-    secondaryCategories: ['Body'],
+    secondaryCategories: ['Body', 'Wellness'],
     title: 'EMS Body Sculpting',
     description: 'Targeted electrical muscle stimulation to tone, firm and strengthen the treated area.',
     detailedDescription: [
@@ -332,6 +332,20 @@ export const services: Service[] = [
         { name: 'Course of 5 sessions', duration: '30 mins ea', price: '£300' },
         { name: 'Course of 10 sessions', duration: '30 mins ea', price: '£530' },
     ]
+  },
+  {
+    id: 's15',
+    primaryCategory: 'Aesthetics',
+    secondaryCategories: ['Body', 'Wellness'],
+    title: 'Fat Freezing',
+    description: 'Non-invasive fat reduction treatment using controlled cooling to eliminate stubborn fat cells.',
+    detailedDescription: [
+      'This advanced fat freezing treatment uses controlled cooling to eliminate stubborn fat cells in targeted areas.',
+      'Ideal for those wanting a more sculpted, toned appearance as part of their body-confidence journey. Common treatment areas include the abdomen, buttocks, thighs, and arms.'
+    ],
+    subTreatments: [],
+    price: '£129',
+    imageId: 'fat-freezing'    
   },
 ];
 

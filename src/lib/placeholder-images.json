@@ -150,6 +150,12 @@
       "description": "Abdomen with EMS system attached.",
       "imageUrl": "/ems.webp",
       "imageHint": "EMS body sculpting"
+    },
+    {
+      "id": "fat-freezing",
+      "description": "Abdomen with fat freezing system attached.",
+      "imageUrl": "/fat-freezing.webp",
+      "imageHint": "Fat Freezing"
     }
   ]
 }
