@@ -1,6 +1,6 @@
 // components/ConsentBanner.tsx
 'use client';
-
+import Link from 'next/link';
 import { useConsent } from '@/components/consent-context';
 
 export default function ConsentBanner() {
@@ -14,6 +14,9 @@ export default function ConsentBanner() {
         <p className="text-sm mb-4 md:mb-0">
           We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
         </p>
+        <nav className="flex space-x-6 text-sm text-muted-foreground">
+          <Link href="/cookie-policy" className="hover:text-primary transition-colors">Cookie Policy</Link>
+        </nav>
         <div className="flex gap-2">
           <button
             onClick={rejectAll}

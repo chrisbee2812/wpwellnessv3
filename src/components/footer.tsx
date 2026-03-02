@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Instagram, Facebook } from 'lucide-react';
 
+
 const Footer = () => {
   return (
     <footer className="bg-card border-t">
@@ -20,11 +21,15 @@ const Footer = () => {
             <p className="mt-2 text-sm text-muted-foreground">Your journey to radiant beauty.</p>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-            <nav className="flex space-x-6 text-sm text-muted-foreground">
-              <Link href="/terms" className="hover:text-primary transition-colors">Terms of Use</Link>
-              <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-              <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-            </nav>
+            <div>
+              <nav className="flex space-x-6 text-sm text-muted-foreground">
+                <Link href="/terms" className="hover:text-primary transition-colors">Terms of Use</Link>
+                <Link href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+                <Link href="/cookie-policy" className="hover:text-primary transition-colors">Cookie Policy</Link>
+                <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+              </nav>
+            </div>
+            
             <div className="flex space-x-4">
               <a href="https://www.tiktok.com/@westparkwellnesss" target='_blank' aria-label="TikTok">
                 <Image

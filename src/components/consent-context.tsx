@@ -15,6 +15,7 @@ type ConsentContextType = {
   showBanner: boolean;
   acceptAll: () => void;
   rejectAll: () => void;
+  resetConsent: () => void;
 };
 
 const defaultConsent: ConsentState = {
@@ -60,8 +61,14 @@ export const ConsentProvider = ({ children }: { children: ReactNode }) => {
     setShowBanner(false);
   };
 
+  const resetConsent = () => {
+  setConsent({ necessary: true, analytics: false });
+  setShowBanner(true);
+  localStorage.removeItem('consent');
+};
+
   return (
-    <ConsentContext.Provider value={{ consent, updateConsent, showBanner, acceptAll, rejectAll }}>
+    <ConsentContext.Provider value={{ consent, updateConsent, showBanner, acceptAll, rejectAll, resetConsent }}>
       {children}
     </ConsentContext.Provider>
   );
