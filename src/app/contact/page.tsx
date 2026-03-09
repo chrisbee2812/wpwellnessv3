@@ -72,7 +72,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                     <h3 className="font-semibold text-primary">Email Us</h3>
-                    <p className="text-muted-foreground">info@westparkwellnessstudio.co.uk</p>
+                    <p className="text-muted-foreground">info@wpwellness.co.uk</p>
                 </div>
              </div>
              <div className="flex items-center gap-4">
