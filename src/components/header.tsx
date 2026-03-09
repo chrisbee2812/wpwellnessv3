@@ -65,7 +65,7 @@ export default function Header() {
               <Mail className="h-6 w-6" />
           </div>
           <div>
-              <p>info@westparkwellnessstudio.co.uk</p>
+              <p>info@wpwellness.co.uk</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
