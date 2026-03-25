@@ -80,12 +80,42 @@ export default function ContactForm() {
     }
   };
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We will get back to you shortly.",
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    // console.log(values.name, values.email, values.subject, values.message);
+    // toast({
+    //   title: "Message Sent!",
+    //   description: "Thank you for contacting us. We will get back to you shortly.",
+    // });
+    // form.reset();
+    // setSelectedService(null);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+        body: JSON.stringify({
+            access_key: "18c8f702-ec72-4668-a0b4-f646cefb4440",
+            subject: values.subject,
+            name: values.name,
+            email: values.email,
+            message: values.message,
+        }),
     });
+    const result = await response.json();
+    if (result.success) {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for contacting us. We will get back to you shortly.",
+      });
+    } else {
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    }
     form.reset();
     setSelectedService(null);
   }
