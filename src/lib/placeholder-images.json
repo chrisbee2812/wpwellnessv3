@@ -156,6 +156,30 @@
       "description": "Abdomen with fat freezing system attached.",
       "imageUrl": "/fat-freezing.webp",
       "imageHint": "Fat Freezing"
+    },
+    {
+      "id": "laser-hair-removal",
+      "description": "Abdomen with laser hair removal system attached.",
+      "imageUrl": "/laser-hair.webp",
+      "imageHint": "Laser Hair Removal"
+    },
+    {
+      "id": "laser-tattoo-removal",
+      "description": "Abdomen with laser tattoo removal system attached.",
+      "imageUrl": "/laser-tattoo.webp",
+      "imageHint": "Laser Tattoo Removal"
+    },
+    {
+      "id": "home-laser-hair-removal",
+      "description": "Abdomen with laser hair removal system attached.",
+      "imageUrl": "/home-laser-hair.webp",
+      "imageHint": "Laser Hair Removal"
+    },
+    {
+      "id": "home-laser-tattoo-removal",
+      "description": "Abdomen with laser tattoo removal system attached.",
+      "imageUrl": "/home-laser-tattoo.webp",
+      "imageHint": "Laser Tattoo Removal"
     }
   ]
 }

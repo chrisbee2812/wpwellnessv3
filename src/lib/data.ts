@@ -347,6 +347,37 @@ export const services: Service[] = [
     price: '£129',
     imageId: 'fat-freezing'    
   },
+  {
+    id: 's16',
+    primaryCategory: 'Aesthetics',
+    secondaryCategories: ['Face', 'Body'],
+    title: 'Laser Hair Removal',
+    description: 'A new treatment for permanent hair reduction using advanced laser technology.',
+    detailedDescription: [
+        'A new treatment for permanent hair reduction using advanced laser technology.',
+        'This cutting-edge procedure targets hair follicles at their root, providing long-term results with minimal discomfort.',
+        'Results: Smooth, hair-free skin that lasts.'
+    ],
+    subTreatments: [],
+    imageId: 'laser-hair-removal',
+    price: 'from £20'
+  },
+  {
+    id: 's17',
+    primaryCategory: 'Aesthetics',
+    secondaryCategories: ['Face', 'Body'],
+    title: 'Laser Tattoo Removal',
+    description: 'A new treatment for permanent tattoo removal using advanced laser technology.',
+    detailedDescription: [
+        'A new treatment for permanent tattoo removal using advanced laser technology.',
+        'This cutting-edge procedure targets tattoo ink at its root, providing long-term results with minimal discomfort.',
+        'Multiple sessions are required for optimal results.',
+        'Please contact us for a consultation to discuss your tattoo removal options and expected outcomes.'
+    ],
+    subTreatments: [],
+    imageId: 'laser-tattoo-removal',
+    price: 'from £50'
+  },
 ];
 
 export const serviceCategories = ['Face', 'Body', 'Wellness', 'Aesthetics', 'Mobile'];
@@ -515,3 +546,47 @@ export const signatureTreatments: SignatureTreatment[] = [
     link: '/services?category=Wellness'
   },  
 ];
+
+export type NewTreatment = {
+  id: string;
+  title: string;
+  shortTitle?: string;
+  description: string;
+  detailedDescription?: string[];
+  imageId: string;
+  price: string;
+  link: string;
+};
+
+export const newTreatments: NewTreatment[] = [
+  {
+    id: 'nt1',
+    title: 'Laser Hair Removal',
+    shortTitle: 'Laser Hair Removal',
+    description: 'A new treatment for permanent hair reduction using advanced laser technology.',
+    detailedDescription: [
+        'A new treatment for permanent hair reduction using advanced laser technology.',
+        'This cutting-edge procedure targets hair follicles at their root, providing long-term results with minimal discomfort.',
+        'Results: Smooth, hair-free skin that lasts.'
+    ],
+    imageId: 'home-laser-hair-removal',
+    price: 'from £20',
+    link: '/services?category=Aesthetics'
+  },
+  {
+    id: 'nt2',
+    title: 'Laser Tattoo Removal',
+    shortTitle: 'Laser Tattoo Removal',
+    description: 'A new treatment for permanent tattoo removal using advanced laser technology.',
+    detailedDescription: [
+        'A new treatment for permanent tattoo removal using advanced laser technology.',
+        'This cutting-edge procedure targets tattoo ink at its root, providing long-term results with minimal discomfort.',
+        'Multiple sessions are required for optimal results.',
+        'Please contact us for a consultation to discuss your tattoo removal options and expected outcomes.'
+    ],
+    imageId: 'home-laser-tattoo-removal',
+    price: 'from £50',
+    link: '/services?category=Aesthetics'
+  },
+]
+   

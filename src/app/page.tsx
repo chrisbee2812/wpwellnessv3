@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { ArrowRight, Gem, Leaf, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { getImageById, Service, featuredCategories, FeaturedCategory, signatureTreatments, SignatureTreatment } from '@/lib/data';
+import { getImageById, Service, featuredCategories, FeaturedCategory, signatureTreatments, SignatureTreatment, NewTreatment, newTreatments } from '@/lib/data';
 import ServiceDetailsDialog from '@/components/service-details-dialog';
 import CategoryDetailsDialog from '@/components/category-details-dialog';
 import SignatureTreatmentDetailsDialog from '@/components/signature-details-dialog';
@@ -155,6 +155,49 @@ export default function Home() {
                   <Link href="/services?category=Mobile">At Home Services <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* New treatments */}
+        <section className="py-12 md:py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary text-center mb-12">
+              Our Latest Offerings
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {newTreatments.map((treatment) => {
+                 const treatmentImage = getImageById(treatment.imageId);
+                  return (
+                  <Card 
+                    key={treatment.id} 
+                    onClick={() => handleSignatureCardClick(treatment)}
+                    className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-2 flex flex-col h-full cursor-pointer"
+                  >
+                    {treatmentImage && (
+                        <div className="aspect-w-16 aspect-h-9">
+                        <Image
+                          src={treatmentImage.imageUrl}
+                          alt={treatmentImage.description}
+                          width={860}
+                          height={400}
+                          className="object-cover w-full h-full"
+                          data-ai-hint={treatmentImage.imageHint}
+                        />
+                        </div>
+                    )}
+                    <CardHeader>
+                      <CardTitle className="font-headline text-primary">{treatment.shortTitle}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex-grow flex flex-col">
+                      <p className="text-muted-foreground flex-grow">{treatment.description}</p>
+                      <div className="p-0 h-auto justify-start mt-4 text-primary font-semibold flex items-center">
+                        <span>Learn More <ArrowRight className="ml-2 h-4 w-4 inline" /></span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                 );
+              })}
             </div>
           </div>
         </section>
