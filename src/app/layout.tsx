@@ -12,7 +12,7 @@ import ConsentBanner from '@/components/consent-banner';
 
 export const metadata: Metadata = {
   title: 'West Park Wellness Studio',
-  description: 'Bespoke cosmetic services for radiant beauty.',
+  description: 'Aesthetic & holistic beauty studio in Leeds offering fillers, facials, EMS body sculpting, fat freezing, laser hair removal, tattoo removal, and skin boosters. Book your consultation today.',
 };
 
 export default function RootLayout({
