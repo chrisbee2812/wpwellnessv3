@@ -40,7 +40,7 @@ export default function ServiceDetailsDialog({ service, open, onOpenChange }: Se
                 {service.detailedDescription.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
-              {service.subServices && service.subServices.length > 0 && (
+                {service.subServices && service.subServices.length > 0 ? (
                   <div className="pt-4">
                     <h3 className="font-headline text-lg text-primary font-semibold mb-2">Treatment Options</h3>
                     <div className="space-y-3">
@@ -67,6 +67,12 @@ export default function ServiceDetailsDialog({ service, open, onOpenChange }: Se
                         </div>
                       ))}
                     </div>
+                  </div>
+                ) : (
+                  <div className="pt-4">
+                    <Button variant="outline" size="sm" asChild>
+                      <Link href={`/contact?subject=Booking enquiry: ${service.title}`}>Book Now</Link>
+                    </Button>
                   </div>
                 )}
               </div>

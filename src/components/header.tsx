@@ -117,6 +117,9 @@ export default function Header() {
                     <DropdownMenuItem asChild>
                         <Link href="/services">View All Services</Link>
                     </DropdownMenuItem>
+                    {/* <DropdownMenuItem asChild>
+                        <Link href="/services/tattoo">Tattoo Removal</Link>
+                    </DropdownMenuItem> */}
                     <DropdownMenuItem asChild>
                         <Link href="/pricing">Pricing</Link>
                     </DropdownMenuItem>

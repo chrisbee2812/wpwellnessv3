@@ -159,13 +159,13 @@
     },
     {
       "id": "laser-hair-removal",
-      "description": "Abdomen with laser hair removal system attached.",
+      "description": "Arm with laser hair removal system attached.",
       "imageUrl": "/laser-hair.webp",
       "imageHint": "Laser Hair Removal"
     },
     {
       "id": "laser-tattoo-removal",
-      "description": "Abdomen with laser tattoo removal system attached.",
+      "description": "Arm with laser tattoo removal system attached.",
       "imageUrl": "/laser-tattoo.webp",
       "imageHint": "Laser Tattoo Removal"
     },
