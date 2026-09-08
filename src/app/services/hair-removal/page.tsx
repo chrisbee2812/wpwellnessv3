@@ -5,8 +5,8 @@ import { getImageById } from '@/lib/data';
 
 export default function AboutPage() {
   const missionImage = getImageById('about-mission');
-  const promiseImage = getImageById('about-promise');
-  const whyusImage = getImageById('about-whyus');
+  const promiseImage = getImageById('eos-ice-max');
+  const beforeAfterImage = getImageById('hair-before-after');
 
   return (
     <div className="bg-background">
@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-headline text-primary font-bold">Laser Hair Removal<br></br>Smooth, Confident, and Hair-Free</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-            Expert laser hair removal with a gentle touch, supporting you on your journey to smooth, confident skin.
+            Advanced laser technology for lasting results — tailored to you, every step of the way.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export default function AboutPage() {
                 Unwanted hair can be a source of self-consciousness and daily frustration. At West Park Wellness Studio, we offer professional laser hair removal designed to provide smooth, long-lasting results for both men and women.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We combine clinical expertise, advanced technology, and a personalised touch to deliver a comfortable experience tailored to your individual skin and hair type.
+                We combine professional care, advanced technology, and a personalised touch to deliver a comfortable experience tailored to your individual skin and hair type.
               </p>
             </div>
             {missionImage && (
@@ -46,20 +46,50 @@ export default function AboutPage() {
           </div>
         </section>
 
+        <section className="mb-12">
+          <h2 className="text-3xl font-headline text-primary font-bold mb-4 text-center">Our Advanced Technology — Eos Ice Max</h2>
+          <p className="text-muted-foreground leading-relaxed text-center mb-8">
+            At West Park Wellness Studio, we use the state-of-the-art Eos Ice Max laser system — a professional-grade device designed for safe, effective, and comfortable hair removal across all skin types.
+          </p>
+          
+              <h3 className="text-2xl font-headline text-primary font-bold mb-2">Multi-Wavelength Technology</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                The Eos Ice Max features four highly effective wavelengths — 755nm, 808nm, 940nm, and 1064nm — allowing us to treat a wide range of skin tones and hair types with precision and safety.
+              </p>
+              <h3 className="text-2xl font-headline text-primary font-bold mb-2">Ice Cooling Comfort</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                The handpiece is equipped with a built-in contact cooling system that cools the skin during treatment. This helps to:
+                <ul className="list-disc list-inside text-muted-foreground leading-relaxed mt-2">
+                  <li>Improve comfort throughout your session</li>
+                  <li>Protect the skin from overheating</li>
+                  <li>Reduce the risk of irritation or side effects</li>
+                </ul>
+              </p>
+                <h3 className="text-2xl font-headline text-primary font-bold mb-2">Flexible Spot Sizes</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  With multiple spot size options (8mm, 15x15mm, 15x20mm, and 15x30mm), we can tailor the treatment to suit different body areas — from smaller, delicate areas to larger treatment zones.
+                </p>
+                <h3 className="text-2xl font-headline text-primary font-bold mb-2">Suitable for All Skin Types</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Thanks to its advanced technology and adjustable settings, the Eos Ice Max is safe and effective for all skin types, with treatments described as comfortable and virtually painless.
+                </p>
+          
+        </section>
+
         {/* Our Promises Section */}
         <section className="mb-24">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="order-2 md:order-2">
+            <div>
               <h2 className="text-3xl font-headline text-primary font-bold mb-4">How Laser Hair Removal Works</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Laser hair removal is the gold standard for permanent hair reduction. It uses a concentrated beam of light to target the pigment in the hair shaft, generating heat that damages the hair follicle and inhibits future growth.
+                Laser hair removal uses a concentrated beam of light to target the pigment in the hair shaft, generating heat that damages the hair follicle and inhibits future growth. This leads to long-term hair reduction over time.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                The treatment is most effective on light skin with dark hair, but modern technology now allows us to successfully treat a wider range of skin and hair types. Multiple sessions are required for optimal results, typically 6–10 treatments, spaced 4–6 weeks apart, to target hairs in their active growth phase.
+                The treatment is most effective on light skin with dark hair, but the Eos Ice Max's multi-wavelength technology allows us to successfully treat a wider range of skin and hair types. Multiple sessions are required for optimal results, with treatment intervals varying depending on the area being treated and individual hair-growth cycles.
               </p>
             </div>
             {promiseImage && (
-              <div className="order-1 md:order-1 rounded-lg overflow-hidden">
+              <div className="rounded-lg overflow-hidden">
                 <Image
                   src={promiseImage.imageUrl}
                   alt={promiseImage.description}
@@ -76,25 +106,25 @@ export default function AboutPage() {
          {/* Why Us Section */}
         <section className="mb-24">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-2">
               <h2 className="text-3xl font-headline text-primary font-bold mb-4">Benefits of Laser Hair Removal</h2>
               <ul className="list-disc list-inside text-muted-foreground leading-relaxed mb-4">
-                <li><strong>Long-lasting results</strong> — significantly reduces hair regrowth over time</li>
-                <li><strong>Precision</strong> — targets hair follicles without damaging surrounding skin</li>
-                <li><strong>Speed</strong> — each pulse of the laser takes a fraction of a second, treating multiple hairs at once</li>
-                <li><strong>Cost-effective</strong> — saves money and time compared to a lifetime of shaving, waxing, or threading</li>
-                <li><strong>No more ingrown hairs</strong> — laser treatment reduces the occurrence of painful ingrown hairs</li>
+                <li><strong>Long-term hair reduction — </strong>significantly reduces hair regrowth over time</li>
+                <li><strong>Precision — </strong>targets hair follicles without damaging surrounding skin</li>
+                <li><strong>Speed — </strong>each pulse of the laser takes a fraction of a second, treating multiple hairs at once</li>
+                <li><strong>Cost-effective — </strong>saves money and time compared to a lifetime of shaving, waxing, or threading</li>
+                <li><strong>Can help reduce ingrown hairs — </strong>laser treatment can reduce the occurrence of painful ingrown hairs</li>
               </ul>
             </div>
-            {whyusImage && (
-              <div className="order-1 md:order-2 rounded-lg overflow-hidden">
+            {beforeAfterImage && (
+              <div className="order-1 md:order-1 rounded-lg overflow-hidden">
                 <Image
-                  src={whyusImage.imageUrl}
-                  alt={whyusImage.description}
+                  src={beforeAfterImage.imageUrl}
+                  alt={beforeAfterImage.description}
                   width={800}
                   height={600}
                   className="object-cover w-3/4 h-3/4 mx-auto"
-                  data-ai-hint={whyusImage.imageHint}
+                  data-ai-hint={beforeAfterImage.imageHint}
                 />
               </div>
             )}
@@ -145,20 +175,21 @@ export default function AboutPage() {
               What to Expect During Your Treatment
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Our hair removal treatments are designed to be as comfortable as possible. Here's what you can expect during your session.
+              Our laser hair removal treatments are designed to be as comfortable and effective as possible. Here's what you can expect before, during, and after your session.
             </p>
             <h3 className="text-xl font-semibold mb-4">Before Your Session</h3>
             <ul className="text-muted-foreground leading-relaxed mb-8">
+              <li>Avoid sun exposure and tanning for at least 4 weeks prior.</li>
               <li>Shave the treatment area 24-48 hours before your appointment.</li>
-              <li>Avoid sun exposure and tanning for at least 2 weeks prior.</li>
-              <li>Do not wax, pluck, or use depilatory creams for at least 4 weeks before your session.</li>
-              <li>Avoid retinoids, glycolic acid, and other skin irritants for a few days before your session.</li>
+              <li>Avoid waxing, plucking, or threading for at least 4 weeks prior — the hair root must be intact for the laser to work.</li>
+              <li>Avoid retinoids, glycolic acid, and other skin irritants in the treatment area for a few days before.</li>
             </ul>
             <h3 className="text-xl font-semibold mb-4">During Your Session</h3>
             <ul className="text-muted-foreground leading-relaxed mb-8">
               <li>You'll be provided with and expected to wear protective eyewear.</li>
-              <li>The laser handpiece will be pressed against your skin, and a cooling device or gel may be used to protect the outer layers of your skin and minimise discomfort.</li>
-              <li>You may feel a mild snapping sensation, often described like a rubber band against the skin.</li>
+              <li>The laser handpiece will be pressed against your skin. The built-in ice cooling system works continuously to cool and protect the skin, making the treatment more comfortable.</li>
+              <li>You may feel a mild snapping sensation, often described like a rubber band against the skin — but the cooling technology helps to minimise any discomfort.</li>
+              <li>Treatment times vary depending on the size and complexity of the area being treated. You will be advised during your consultation as to the expected duration.</li>
             </ul>
             <h3 className="text-xl font-semibold mb-4">After Your Session</h3>
             <ul className="text-muted-foreground leading-relaxed mb-8">
@@ -211,12 +242,12 @@ export default function AboutPage() {
               We understand you may have questions about laser hair removal. Here are some of the most common queries we receive:
             </p>
             <ul className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 text-left">
-              <li className="mb-4"><strong>Is laser hair removal painful?</strong><p>Most clients describe the sensation as a mild snapping feeling. We can apply numbing cream to minimise discomfort.</p></li>
-              <li className="mb-4"><strong>How many sessions will I need?</strong><p> Typically, 6–10 sessions are recommended for optimal results, though this varies depending on your skin, hair, and the treatment area.</p></li>
-              <li className="mb-4"><strong>Is it safe for all skin types?</strong><p> Yes, when performed by a qualified professional, modern laser technology allows us to treat a wide range of skin tones safely and effectively.</p></li>
-              <li className="mb-4"><strong>What should I do after my session?</strong><p> Avoid sun exposure, hot baths, and strenuous exercise for 24–48 hours. Use SPF 50+ on treated areas for at least 4 weeks.</p></li>
-              <li className="mb-4"><strong>Can I shave between sessions?</strong><p> Yes, shaving is allowed, but avoid waxing or plucking as it can interfere with the treatment.</p></li>
-              <li className="mb-4"><strong>Are the results permanent?</strong><p> Laser hair removal provides permanent hair reduction, not necessarily 100% permanent removal. Some hairs may eventually regrow, but they will be finer and lighter.</p></li>
+              <li className="mb-4"><strong>Is laser hair removal painful? </strong><p>Most clients describe the sensation as a mild snap of a rubber band against the skin. The Eos Ice Max features a built-in ice cooling system that helps keep you comfortable throughout the treatment.</p></li>
+              <li className="mb-4"><strong>How many sessions will I need? </strong><p>Most clients require a course of sessions for optimal results, though this varies depending on your skin, hair, and the treatment area. Treatment intervals also vary depending on the area being treated and individual hair-growth cycles.</p></li>
+              <li className="mb-4"><strong>Is it safe? </strong><p>Yes. When performed by trained professionals using the correct equipment, laser hair removal is a safe and effective treatment.</p></li>
+              <li className="mb-4"><strong>Can I shave between sessions? </strong><p>Yes. Shaving is encouraged between sessions, but you must avoid waxing, plucking, or threading as these remove the hair root that the laser needs to target.</p></li>
+              <li className="mb-4"><strong>Are the results permanent? </strong><p>Laser hair removal provides long-term hair reduction, not necessarily 100% permanent removal. Some hairs may eventually regrow, but they will be finer and lighter.</p></li>
+              <li className="mb-4"><strong>Is it suitable for my skin type? </strong><p>Yes. The Eos Ice Max features four wavelengths, making it suitable for all skin types. We'll assess your skin during your consultation to ensure the safest, most effective treatment.</p></li>
             </ul>
           </div>
         </section>

@@ -180,6 +180,18 @@
       "description": "Abdomen with laser tattoo removal system attached.",
       "imageUrl": "/home-laser-tattoo.webp",
       "imageHint": "Laser Tattoo Removal"
+    },
+    {
+      "id": "eos-ice-max",
+      "description": "eos ice max laser system.",
+      "imageUrl": "/eosice.webp",
+      "imageHint": "Eos Ice Max Laser"
+    },
+    {
+      "id": "hair-before-after",
+      "description": "A woman showing before and after results of laser hair removal.",
+      "imageUrl": "/hair-before-after.webp",
+      "imageHint": "Laser Hair Removal Results"
     }
   ]
 }
