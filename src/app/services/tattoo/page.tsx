@@ -52,10 +52,10 @@ export default function AboutPage() {
             <div className="order-2 md:order-2">
               <h2 className="text-3xl font-headline text-primary font-bold mb-4">Advanced Technology, Personalised Care</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                We use [insert laser make/model – e.g., Quanta Q-Plus C or Fotona StarWalker] , a state-of-the-art [insert laser type – e.g., Q-switched Nd:YAG / picosecond] laser designed specifically for safe and effective tattoo removal. This advanced system delivers precise pulses of energy that target and break down ink particles beneath the skin, allowing your body's natural immune system to gradually flush them away.
+                We use a state-of-the-art professional Q-switched Nd:YAG laser technology, using 1064 nm and 532 nm wavelengths to target a range of tattoo pigments, designed specifically for safe and effective tattoo removal. This advanced system delivers precise pulses of energy that target and break down ink particles beneath the skin, allowing your body's natural immune system to gradually flush them away.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                The process begins with a thorough consultation, where we assess your tattoo's size, colour, age, and your skin type to create a bespoke treatment plan. During the procedure, the laser is carefully passed over the tattooed area, with treatment times varying depending on the size and complexity of the design. Most sessions last between [insert time range – e.g., 15 to 45 minutes] , and we'll recommend a series of sessions spaced [insert frequency – e.g., 6 to 8 weeks apart] for optimal results.
+                The process begins with a thorough consultation, where we assess your tattoo's size, colour, age, and your skin type to create a bespoke treatment plan. During the procedure, the laser is carefully passed over the tattooed area, with treatment times varying depending on the size and complexity of the design. Most sessions last between 10 to 30 minutes, and we'll recommend a series of sessions spaced 6 weeks apart to allow for adequate healing between treatments.
               </p>
             </div>
             {promiseImage && (
