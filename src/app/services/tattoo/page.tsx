@@ -25,7 +25,7 @@ export default function AboutPage() {
             <div className="order-2 md:order-1">
               <h2 className="text-3xl font-headline text-primary font-bold mb-4">Your Fresh Start</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                At West Park Wellness Studio, we believe in second chances. Our tattoo removal service offers you the opportunity to move forward with confidence, leaving behind what no longer serves you. Using state-of-the-art laser technology, we gently and effectively fade unwanted tattoos, restoring your skin and your peace of mind.
+                At West Park Wellness Studio, we believe in second chances. Our tattoo removal service offers you the opportunity to move forward with confidence, leaving behind what no longer serves you. Using professional laser technology, we gently and effectively fade unwanted tattoo pigment.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Your journey is unique, and so is your treatment. We'll guide you through the process, explaining everything from how the laser works to what to expect during recovery. Our goal is simple: to help you feel comfortable, informed, and empowered as you take this step towards a fresh start.
@@ -52,7 +52,7 @@ export default function AboutPage() {
             <div className="order-2 md:order-2">
               <h2 className="text-3xl font-headline text-primary font-bold mb-4">Advanced Technology, Personalised Care</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                We use a state-of-the-art professional Q-switched Nd:YAG laser, featuring both 1064 nm and 532 nm wavelengths to target a wide range of tattoo pigments. This advanced system delivers precise pulses of energy that break down ink particles beneath the skin, allowing your body's natural immune system to gradually flush them away.
+                We use professional Q-Switched Nd:YAG laser technology, featuring 1064 nm and 532 nm wavelengths to target a range of tattoo pigments. This advanced system delivers precise pulses of energy that break down ink particles beneath the skin, allowing your body's natural immune system to gradually flush them away.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 The process begins with a thorough consultation, where we assess your tattoo's size, colour, age, and your skin type to create a bespoke treatment plan tailored to you.
@@ -82,7 +82,7 @@ export default function AboutPage() {
                 We know that the thought of laser tattoo removal can feel daunting, but we're here to make every step as comfortable and straightforward as possible. From your initial consultation through to aftercare, we prioritise your wellbeing and peace of mind.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                During your session, we offer topical numbing cream to minimise any discomfort, and our laser features a built-in cooling system that soothes the skin throughout the procedure. We'll also provide clear, detailed aftercare guidance to support your skin's healing — and we'll be here to answer any questions along the way.
+                During your session, we'll guide you through the process and ensure you feel at ease throughout the procedure. We'll also provide clear, detailed aftercare guidance to support your skin's healing — and we'll be here to answer any questions along the way.
               </p>
             </div>
             {whyusImage && (
@@ -127,7 +127,7 @@ export default function AboutPage() {
             </ul>
             <h3 className="text-xl font-semibold mb-4">After Your Session</h3>
             <ul className="text-lg text-muted-foreground leading-relaxed mb-8">
-              <li>You may experience some redness, swelling, or mild blistering — these are normal signs that your body is responding to the treatment.</li>
+              <li>Temporary redness and swelling can occur following treatment, and some clients may experience blistering — these are normal signs that your body is responding to the treatment.</li>
               <li>We'll provide detailed aftercare instructions, including:</li>
                 <ul className="list-disc list-inside text-lg text-muted-foreground max-w-xl mx-auto mb-8 text-left">
                   <li>How to keep the area clean</li>
@@ -135,7 +135,7 @@ export default function AboutPage() {
                   <li>What to avoid (sun exposure, intense exercise, swimming, and hot baths)</li>
                 </ul>
               <li>We'll schedule a follow-up check-in to ensure your skin is healing beautifully.</li>
-              <li>Treatments are spaced 6 weeks apart to allow for adequate healing between sessions.</li>
+              <li>Treatments are spaced a minimum of 6 weeks apart, depending on healing and individual response.</li>
             </ul>
           </div>
         </section>
@@ -147,7 +147,7 @@ export default function AboutPage() {
             </h2>
             <ul className="list-disc list-inside text-lg text-muted-foreground max-w-2xl mx-auto mb-8 text-left">
               <li><strong>Qualified & Experienced Practitioners — </strong>we are fully trained and certified in laser tattoo removal.</li>
-              <li><strong>Advanced Technology — </strong>we use medical-grade Q-switched Nd:YAG laser equipment for safe and effective results.</li>
+              <li><strong>Advanced Technology — </strong>we use professional Q-switched Nd:YAG laser equipment for safe and effective results.</li>
               <li><strong>Personalised Treatment Plans — </strong>every tattoo is unique, and we tailor every session to your specific ink, skin type, and goals.</li>
               <li><strong>Hygiene & Safety — </strong>we maintain the highest standards of cleanliness and safety in all our treatment rooms.</li>
               <li><strong>Proven Results — </strong>our clients trust us, and we're proud of the positive feedback and referrals we receive.</li>
@@ -165,13 +165,13 @@ export default function AboutPage() {
               We understand you may have questions about laser tattoo removal. Here are some of the most common queries we receive:
             </p>
             <ul className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 text-left">
-              <li className="mb-4"><strong>Is laser tattoo removal painful?</strong><p>Most clients describe the sensation as a rubber band snapping against the skin. We offer topical numbing cream and the laser has a built-in cooling system to keep you comfortable throughout.</p></li>
-              <li className="mb-4"><strong>How many sessions will I need?</strong><p>The number of sessions depends on the size, colour, age, and depth of your tattoo, as well as your skin type. Most tattoos require 6–12 sessions, spaced 6 weeks apart, for optimal fading.</p></li>
+              <li className="mb-4"><strong>Is laser tattoo removal painful?</strong><p>Most clients describe the sensation as a rubber band snapping against the skin.</p></li>
+              <li className="mb-4"><strong>How many sessions will I need?</strong><p>The number of sessions required varies depending on factors including the size, colour, age and depth of the tattoo, as well as skin type and individual response. This will be discussed during your consultation.</p></li>
               <li className="mb-4"><strong>Does it work on all colours?</strong><p>The Q-switched Nd:YAG laser is effective on most tattoo pigments, including black, dark blue, green, red, and orange. Some lighter or more stubborn colours (like yellow or pastel shades) may be more challenging. We'll assess your tattoo during your consultation.</p></li>
               <li className="mb-4"><strong>Will it leave a scar?</strong><p>When performed by trained professionals, laser tattoo removal is safe and carries a low risk of scarring. Following our aftercare instructions carefully will help minimise any risk and ensure your skin heals beautifully.</p></li>
               <li className="mb-4"><strong>How long does each session take?</strong><p>Treatment times vary depending on the size and complexity of the design. Most sessions last between 10 to 30 minutes.</p></li>
               <li className="mb-4"><strong>Can I have a new tattoo in the same area?</strong><p>Yes, but we recommend waiting until the skin has fully healed after your final session — typically 6–8 weeks — before getting a new tattoo in the same area.</p></li>
-              <li className="mb-4"><strong>Is it safe on all skin types?</strong><p>Yes. The Q-switched Nd:YAG laser is safe for all skin types, and we adjust the settings to suit your individual skin tone and tattoo characteristics.</p></li>
+              <li className="mb-4"><strong>Is it safe on all skin types?</strong><p>Suitability is assessed individually during consultation, taking into account your skin type, tattoo characteristics and treatment area.</p></li>
             </ul>
           </div>
         </section>
