@@ -117,9 +117,15 @@ export default function Header() {
                     <DropdownMenuItem asChild>
                         <Link href="/services">View All Services</Link>
                     </DropdownMenuItem>
-                    {/* <DropdownMenuItem asChild>
+                    <DropdownMenuItem asChild>
                         <Link href="/services/tattoo">Tattoo Removal</Link>
-                    </DropdownMenuItem> */}
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                        <Link href="/services/hair-removal">Hair Removal</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                        <Link href="/services/body-contouring">Body Contouring</Link>
+                    </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                         <Link href="/pricing">Pricing</Link>
                     </DropdownMenuItem>

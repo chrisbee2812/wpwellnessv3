@@ -5,8 +5,8 @@ import { getImageById } from '@/lib/data';
 
 export default function AboutPage() {
   const missionImage = getImageById('about-mission');
-  const promiseImage = getImageById('about-promise');
-  const whyusImage = getImageById('about-whyus');
+  const fatfreezeImage = getImageById('fat-freeze');
+  const emsImage = getImageById('EMS');
 
   return (
     <div className="bg-background">
@@ -46,7 +46,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Our Promises Section */}
+        {/* FatFreeze Section */}
         <section className="mb-24">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="order-2 md:order-2">
@@ -58,15 +58,15 @@ export default function AboutPage() {
                 Once destroyed, your body naturally eliminates these fat cells through your lymphatic system over the following weeks and months.
               </p>
             </div>
-            {promiseImage && (
+            {fatfreezeImage && (
               <div className="order-1 md:order-1 rounded-lg overflow-hidden">
                 <Image
-                  src={promiseImage.imageUrl}
-                  alt={promiseImage.description}
+                  src={fatfreezeImage.imageUrl}
+                  alt={fatfreezeImage.description}
                   width={800}
                   height={600}
                   className="object-cover w-3/4 h-3/4 mx-auto"
-                  data-ai-hint={promiseImage.imageHint}
+                  data-ai-hint={fatfreezeImage.imageHint}
                 />
               </div>
             )}
@@ -118,15 +118,15 @@ export default function AboutPage() {
                 EMS can help strengthen and tone targeted muscle groups, including the abdominal and core muscles. It can also be particularly useful as part of a body-toning programme following pregnancy, once the client has fully recovered and is suitable for treatment.
               </p>
             </div>
-            {promiseImage && (
+            {emsImage && (
               <div className="order-1 md:order-1 rounded-lg overflow-hidden">
                 <Image
-                  src={promiseImage.imageUrl}
-                  alt={promiseImage.description}
+                  src={emsImage.imageUrl}
+                  alt={emsImage.description}
                   width={800}
                   height={600}
                   className="object-cover w-3/4 h-3/4 mx-auto"
-                  data-ai-hint={promiseImage.imageHint}
+                  data-ai-hint={emsImage.imageHint}
                 />
               </div>
             )}

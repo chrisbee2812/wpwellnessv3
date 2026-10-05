@@ -7,6 +7,7 @@ export default function AboutPage() {
   const missionImage = getImageById('about-mission');
   const promiseImage = getImageById('about-promise');
   const whyusImage = getImageById('about-whyus');
+  const laserTattooRemovalImage = getImageById('laser-tattoo-removal');
 
   return (
     <div className="bg-background">
@@ -58,15 +59,15 @@ export default function AboutPage() {
                 The process begins with a thorough consultation, where we assess your tattoo's size, colour, age, and your skin type to create a bespoke treatment plan tailored to you.
               </p>
             </div>
-            {promiseImage && (
+            {laserTattooRemovalImage && (
               <div className="order-1 md:order-1 rounded-lg overflow-hidden">
                 <Image
-                  src={promiseImage.imageUrl}
-                  alt={promiseImage.description}
+                  src={laserTattooRemovalImage.imageUrl}
+                  alt={laserTattooRemovalImage.description}
                   width={800}
                   height={600}
                   className="object-cover w-3/4 h-3/4 mx-auto"
-                  data-ai-hint={promiseImage.imageHint}
+                  data-ai-hint={laserTattooRemovalImage.imageHint}
                 />
               </div>
             )}

@@ -192,6 +192,12 @@
       "description": "A woman showing before and after results of laser hair removal.",
       "imageUrl": "/hair-before-after.webp",
       "imageHint": "Laser Hair Removal Results"
+    },
+    {
+      "id": "fat-freeze",
+      "description": "Fat freezing machine.",
+      "imageUrl": "/fat-freeze.jpeg",
+      "imageHint": "Fat Freezing Results"
     }
   ]
 }

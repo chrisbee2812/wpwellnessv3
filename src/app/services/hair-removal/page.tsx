@@ -57,14 +57,15 @@ export default function AboutPage() {
                 The Eos Ice Max features four highly effective wavelengths — 755nm, 808nm, 940nm, and 1064nm — allowing us to treat a wide range of skin tones and hair types with precision and safety.
               </p>
               <h3 className="text-2xl font-headline text-primary font-bold mb-2">Ice Cooling Comfort</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
+              <p className="text-muted-foreground leading-relaxed mb-2">
                 The handpiece is equipped with a built-in contact cooling system that cools the skin during treatment. This helps to:
-                <ul className="list-disc list-inside text-muted-foreground leading-relaxed mt-2">
-                  <li>Improve comfort throughout your session</li>
-                  <li>Protect the skin from overheating</li>
-                  <li>Reduce the risk of irritation or side effects</li>
-                </ul>
               </p>
+              <ul className="list-disc list-inside text-muted-foreground leading-relaxed mb-4">
+                <li>Improve comfort throughout your session</li>
+                <li>Protect the skin from overheating</li>
+                <li>Reduce the risk of irritation or side effects</li>
+              </ul>
+              
                 <h3 className="text-2xl font-headline text-primary font-bold mb-2">Flexible Spot Sizes</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   With multiple spot size options (8mm, 15x15mm, 15x20mm, and 15x30mm), we can tailor the treatment to suit different body areas — from smaller, delicate areas to larger treatment zones.
