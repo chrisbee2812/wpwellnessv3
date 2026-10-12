@@ -20,7 +20,7 @@ export default function AboutPage() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         {/* Page Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-headline text-primary font-bold">About West Park Wellness Studio</h1>
+          <h1 className="text-4xl md:text-5xl font-headline text-primary font-bold">About West Park Wellnes Studio</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             Dedicated to revealing your inner glow through expert care and a holistic approach to beauty.
           </p>
