@@ -1,6 +1,7 @@
 
 import React, { Suspense } from 'react';
 import ServicesPageContent from './services-page-content';
+import ServicesListSchema from './services-schema';
 import { Skeleton } from '@/components/ui/skeleton';
 
 export const metadata = {
@@ -12,9 +13,12 @@ export const metadata = {
 
 export default function ServicesPage() {
   return (
-    <Suspense fallback={<ServicesPageSkeleton />}>
-      <ServicesPageContent />
-    </Suspense>
+    <>
+      <ServicesListSchema />
+      <Suspense fallback={<ServicesPageSkeleton />}>
+        <ServicesPageContent />
+      </Suspense>
+    </>
   );
 }
 

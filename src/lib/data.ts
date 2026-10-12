@@ -15,6 +15,7 @@ export type Service = {
   primaryCategory: ServiceCategory;
   secondaryCategories?: ServiceCategory[];
   title: string;
+  slug: string;
   description: string;
   detailedDescription: string[];
   subTreatments: string[];
@@ -38,6 +39,7 @@ export const services: Service[] = [
     id: 's1', 
     primaryCategory: 'Face',
     secondaryCategories: ['Aesthetics'],
+    slug: 'anti-wrinkle-injections',
     title: 'Anti-Wrinkle Injections', 
     description: 'Anti-wrinkle injections are a popular cosmetic treatment used to reduce the appearance of wrinkles.', 
     detailedDescription: [
@@ -59,6 +61,7 @@ export const services: Service[] = [
     id: 's2', 
     primaryCategory: 'Face',
     secondaryCategories: ['Aesthetics'],
+    slug: 'dermal-fillers',
     title: 'Dermal Fillers', 
     description: 'Dermal fillers are used to add volume to the skin, fill wrinkles, and enhance facial features for a more youthful appearance.', 
     detailedDescription: [
@@ -79,6 +82,7 @@ export const services: Service[] = [
   { 
     id: 's3', 
     primaryCategory: 'Face',
+    slug: 'facial-and-skin-treatments',
     secondaryCategories: ['Aesthetics'], 
     title: 'Facial & Skin Treatments', 
     description: 'Various cosmetic treatments designed to achieve a smooth, radiant, and translucent complexion', 
@@ -109,6 +113,7 @@ export const services: Service[] = [
     id: 's6', 
     primaryCategory: 'Face',
     secondaryCategories: ['Aesthetics'],
+    slug: 'skin-boosters-and-eye-boosters',
     title: 'Skin Boosters & Eye Boosters', 
     description: 'Skin boosters and eye boosters designed to improve skin quality, hydration, and texture.', 
     detailedDescription: [
@@ -134,6 +139,7 @@ export const services: Service[] = [
   },
   { 
     id: 's4', 
+    slug: 'fat-dissolving-injections',
     primaryCategory: 'Body',
     secondaryCategories: ['Aesthetics', 'Wellness'],
     title: 'Fat Dissolving Injections', 
@@ -156,6 +162,7 @@ export const services: Service[] = [
   },
   { 
     id: 's5', 
+    slug: 'vitamin-injections',
     primaryCategory: 'Wellness',
     secondaryCategories: ['Body'],
     title: 'Vitamin Injections', 
@@ -179,7 +186,8 @@ export const services: Service[] = [
     id: 's7', 
     primaryCategory: 'Wellness',
     secondaryCategories: ['Body'],
-    title: 'Massage & Holistic Therapies', 
+    title: 'Massage & Holistic Therapies',
+    slug: 'massage-and-holistic-therapies',
     description: 'Experience our incredible hot stone massage, or indulgent foot therapy.', 
     detailedDescription: [
       "Our Hot Stone massage helps relive tension and pain, reduces stress and anxiety, promotes sleep and may even boost your immunity. Such an incredibly relaxing experience, you'll always come back for more.",
@@ -196,6 +204,7 @@ export const services: Service[] = [
   {
     id: 's8',
     primaryCategory: 'Wellness',
+    slug: 'pandora-star-light-therapies',
     title: 'Pandora Star Light Therapies',
     description: ' Pandora Star provides immersive visual and sensory experiences, supporting relaxation and encouraging creative exploration.',
     detailedDescription: [
@@ -218,6 +227,7 @@ export const services: Service[] = [
     primaryCategory: 'Aesthetics',
     secondaryCategories: ['Face'],
     title: 'Brows, Lashes & Threading',
+    slug: 'brows-lashes-threading',
     description: 'Experience our many eyebrow and eyelash treatments.',
     detailedDescription: [
       'Brow lamination is a semi-permanent cosmetic treatment that straightens and sets eyebrow hairs in a desired, upward direction, creating a fuller, more defined, and uniformly shaped appearance.',
@@ -242,6 +252,7 @@ export const services: Service[] = [
     primaryCategory: 'Aesthetics',
     secondaryCategories: ['Face', 'Body'],
     title: 'Cryopen Lesion Removal', 
+    slug: 'cryopen-lesion-removal',
     description: 'Our safe and precise removal of benign skin lesions.', 
     detailedDescription: [
       "CryoPen Lesion removal is our safe and precise removal of benign skin lesions, including skin tags, warts, verrucas, cherry angiomas, milia, age spots, sun spots, and pigmentation.",
@@ -262,6 +273,7 @@ export const services: Service[] = [
     id: 's11',
     primaryCategory: 'Face',
     secondaryCategories: ['Aesthetics'],
+    slug: 'advanced-needling-treatments',
     title: 'Advanced Needling Treatments',
     description: 'Reduce the appearance of facial wrinkles with this popular injectable treatment.',
     detailedDescription: [
@@ -282,6 +294,7 @@ export const services: Service[] = [
     id: 's12',
     primaryCategory: 'Body',
     secondaryCategories: ['Wellness', 'Aesthetics', 'Face'],
+    slug: 'body-treatments',
     title: 'Body Treatments',
     description: 'Restore volume and fullness to the face, creating a more youthful appearance.',
     detailedDescription: [
@@ -302,6 +315,7 @@ export const services: Service[] = [
     primaryCategory: 'Wellness',
     secondaryCategories: ['Body'],
     title: 'Ear Wax Removal',
+    slug: 'ear-wax-removal',
     description: 'Restore your hearing with our earwax suction treatment.',
     detailedDescription: [
       'Experience the soothing harmony of a clean auditory canvas, ensuring your ears are free to absorb the sounds of life with crystal-clear precision. Our gentle earwax removal service is designed to provide relief from discomfort and enhance your hearing clarity.',
@@ -318,6 +332,7 @@ export const services: Service[] = [
     primaryCategory: 'Aesthetics',
     secondaryCategories: ['Body', 'Wellness'],
     title: 'EMS Body Sculpting',
+    slug: 'body-contouring',
     description: 'Targeted electrical muscle stimulation to tone, firm and strengthen the treated area.',
     detailedDescription: [
       'This advanced EMS treatment uses targeted electrical muscle stimulation to activate and contract the muscles — helping to tone, firm and strengthen the treated area.',
@@ -337,6 +352,7 @@ export const services: Service[] = [
     id: 's15',
     primaryCategory: 'Aesthetics',
     secondaryCategories: ['Body', 'Wellness'],
+    slug: 'fat-freezing',
     title: 'Fat Freezing',
     description: 'Non-invasive fat reduction treatment using controlled cooling to eliminate stubborn fat cells.',
     detailedDescription: [
@@ -344,7 +360,7 @@ export const services: Service[] = [
       'Ideal for those wanting a more sculpted, toned appearance as part of their body-confidence journey. Common treatment areas include the abdomen, buttocks, thighs, and arms.'
     ],
     subTreatments: [],
-    price: '£129',
+    price: '£120',
     imageId: 'fat-freezing'    
   },
   {
@@ -352,6 +368,7 @@ export const services: Service[] = [
     primaryCategory: 'Aesthetics',
     secondaryCategories: ['Face', 'Body'],
     title: 'Laser Hair Removal',
+    slug: 'laser-hair-removal',
     description: 'A new treatment for permanent hair reduction using advanced laser technology.',
     detailedDescription: [
         'A new treatment for permanent hair reduction using advanced laser technology.',
@@ -367,6 +384,7 @@ export const services: Service[] = [
     primaryCategory: 'Aesthetics',
     secondaryCategories: ['Face', 'Body'],
     title: 'Laser Tattoo Removal',
+    slug: 'laser-tattoo-removal',
     description: 'A new treatment for permanent tattoo removal using advanced laser technology.',
     detailedDescription: [
         'A new treatment for permanent tattoo removal using advanced laser technology.',

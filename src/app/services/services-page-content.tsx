@@ -54,7 +54,7 @@ export default function ServicesPageContent() {
   const renderServiceCard = (service: Service) => {
     const serviceImage = getImageById(service.imageId);
     return (
-      <Card key={service.id} onClick={() => handleCardClick(service)} className="overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl cursor-pointer">
+      <Card key={service.id} id={service.slug} onClick={() => handleCardClick(service)} className="overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl cursor-pointer">
         {serviceImage && (
            <div className="aspect-w-16 aspect-h-9">
              <Image
