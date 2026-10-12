@@ -1,5 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
+export const metadata = {
+  title: 'Terms & Conditions',
+  description:
+    'The terms and conditions governing bookings, treatments, cancellations, and use of the West Park Wellness Studio website. Please read before booking.',
+  alternates: { canonical: '/terms' },
+};
+
 export default function TermsPage() {
   return (
     <div className="bg-background">

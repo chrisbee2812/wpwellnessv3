@@ -3,6 +3,13 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { getImageById } from '@/lib/data';
 
+export const metadata = {
+  title: 'EMS Body Sculpting & Fat Freezing Leeds',
+  description:
+    'Non-surgical body contouring in Leeds. EMS body sculpting and fat freezing treatments to tone and sculpt. Book a consultation at West Park Wellness Studio.',
+  alternates: { canonical: '/services/body-contouring' },
+};
+
 export default function AboutPage() {
   const missionImage = getImageById('about-mission');
   const fatfreezeImage = getImageById('fat-freeze');

@@ -6,6 +6,13 @@ import { Card, CardContent } from '@/components/ui/card';
 import { teamMembers, getImageById, TeamMember } from '@/lib/data';
 import StaffDetailsDialog from '@/components/staff-details-dialog';
 
+export const metadata = {
+  title: 'Meet Our Team',
+  description:
+    'Meet Becky, the qualified aesthetician and therapist behind West Park Wellness Studio in Leeds. Experienced, insured, and passionate about your results.',
+  alternates: { canonical: '/staff' },
+};
+
 export default function StaffPage() {
   const heroImage = getImageById('staff-hero');
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);

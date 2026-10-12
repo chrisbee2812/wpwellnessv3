@@ -4,9 +4,11 @@ import ResetConsentButton from '@/components/reset-consent';
 import ConsentStatus from '@/components/consent-status'; // client component
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Cookie Policy',
-  description: 'Learn how we use cookies on our website, including Google Analytics, and how you can control your consent.',
+  description:
+    'Learn how West Park Wellness Studio uses cookies and similar technologies on our website, what they do, and how you can manage your preferences.',
+  alternates: { canonical: '/cookie-policy' },
 };
 
 export default function CookiePolicyPage() {

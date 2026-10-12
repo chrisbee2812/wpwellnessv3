@@ -9,6 +9,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { services, serviceCategories, getImageById, Service, ServiceCategory } from '@/lib/data';
 import ServiceDetailsDialog from '@/components/service-details-dialog';
 
+export const metadata = {
+  title: 'Terms & Conditions',
+  description:
+    'The terms and conditions governing bookings, treatments, cancellations, and use of the West Park Wellness Studio website. Please read before booking.',
+  alternates: { canonical: '/terms' },
+};
+
 export default function ServicesPageContent() {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get('category');

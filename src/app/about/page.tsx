@@ -3,6 +3,13 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { getImageById } from '@/lib/data';
 
+export const metadata = {
+  title: 'About Us',
+  description:
+    'Discover the mission, promise, and unforgettable experience behind West Park Wellness Studio—Leeds\' home of aesthetic and holistic beauty.',
+  alternates: { canonical: '/about' },
+};
+
 export default function AboutPage() {
   const missionImage = getImageById('about-mission');
   const promiseImage = getImageById('about-promise');

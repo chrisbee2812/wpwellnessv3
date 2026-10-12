@@ -3,6 +3,13 @@ import React, { Suspense } from 'react';
 import ServicesPageContent from './services-page-content';
 import { Skeleton } from '@/components/ui/skeleton';
 
+export const metadata = {
+  title: 'Our Services',
+  description:
+    'Explore our full menu of aesthetic and holistic treatments in Leeds—fillers, facials, EMS body sculpting, fat freezing, laser hair removal, tattoo removal, and skin boosters.',
+  alternates: { canonical: '/services' },
+};
+
 export default function ServicesPage() {
   return (
     <Suspense fallback={<ServicesPageSkeleton />}>

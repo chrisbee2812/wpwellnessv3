@@ -3,6 +3,13 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { getImageById } from '@/lib/data';
 
+export const metadata = {
+  title: 'Laser Tattoo Removal Leeds',
+  description:
+    'Safe, effective laser tattoo removal in Leeds. Professional treatment at West Park Wellness Studio. Book your consultation to discuss your removal plan.',
+  alternates: { canonical: '/services/tattoo' },
+};
+
 export default function AboutPage() {
   const missionImage = getImageById('about-mission');
   const promiseImage = getImageById('about-promise');

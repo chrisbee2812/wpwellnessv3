@@ -4,6 +4,13 @@ import ContactForm from "@/components/contact-form";
 import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 import { Skeleton } from '@/components/ui/skeleton';
 
+export const metadata = {
+  title: 'Contact Us',
+  description:
+    'Get in touch with West Park Wellness Studio in Leeds. Book a consultation, ask a question, or find our address, phone number, and opening hours.',
+  alternates: { canonical: '/contact' },
+};
+
 function ContactFormSkeleton() {
   return (
     <div className="space-y-6">

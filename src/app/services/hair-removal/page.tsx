@@ -3,6 +3,13 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { getImageById } from '@/lib/data';
 
+export const metadata = {
+  title: 'Laser Hair Removal Leeds',
+  description:
+    'Professional laser hair removal in Leeds for smooth, lasting results. Safe, effective treatment at West Park Wellness Studio. Book your consultation today.',
+  alternates: { canonical: '/services/hair-removal' },
+};
+
 export default function AboutPage() {
   const missionImage = getImageById('about-mission');
   const promiseImage = getImageById('eos-ice-max');

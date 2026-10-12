@@ -1,5 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
+export const metadata = {
+  title: 'Privacy Policy',
+  description:
+    'How West Park Wellness Studio collects, uses, stores, and protects your personal data. Read our full privacy policy and your rights under UK GDPR.',
+  alternates: { canonical: '/privacy' },
+};
+
 export default function PrivacyPage() {
   return (
     <div className="bg-background">
