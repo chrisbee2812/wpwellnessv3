@@ -27,6 +27,17 @@ export default function LocalBusinessSchema() {
       latitude: 53.8378, // Replace with exact coords
       longitude: -1.6080, // Replace with exact coords
     },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '07348 812217', // Replace
+      contactType: 'customer service',
+      areaServed: 'GB',
+      availableLanguage: ['English'],
+    },
+    founder: {
+      '@type': 'Person',
+      name: 'Rebecca Snook', // Replace with full name
+    },
     areaServed: [
       { '@type': 'City', name: 'Leeds' },
       { '@type': 'AdministrativeArea', name: 'West Yorkshire' },
