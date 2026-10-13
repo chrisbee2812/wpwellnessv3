@@ -7,7 +7,7 @@ export default function LocalBusinessSchema() {
     description:
       'Aesthetic & holistic beauty studio in Leeds offering fillers, facials, EMS body sculpting, fat freezing, laser hair removal, tattoo removal, and skin boosters.',
     url: 'https://wpwellness.co.uk',
-    telephone: '07348 812217', // Replace
+    telephone: '07706 424469', // Replace
     email: 'hello@wpwellness.co.uk', // Replace
     image: 'https://wpwellness.co.uk/og-image.jpg',
     logo: 'https://wpwellness.co.uk/logo.png',
@@ -29,7 +29,7 @@ export default function LocalBusinessSchema() {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '07348 812217', // Replace
+      telephone: '07706 424469', // Replace
       contactType: 'customer service',
       areaServed: 'GB',
       availableLanguage: ['English'],
@@ -45,21 +45,15 @@ export default function LocalBusinessSchema() {
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        dayOfWeek: ['Monday'],
         opens: '09:00',
         closes: '18:00',
       },
       {
         '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Saturday'],
-        opens: '09:00',
-        closes: '17:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Sunday'],
+        dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday', 'Friday'],
         opens: '10:00',
-        closes: '16:00',
+        closes: '18:00',
       },
     ],
     sameAs: [
