@@ -8,7 +8,7 @@ export default function LocalBusinessSchema() {
       'Aesthetic & holistic beauty studio in Leeds offering fillers, facials, EMS body sculpting, fat freezing, laser hair removal, tattoo removal, and skin boosters.',
     url: 'https://wpwellness.co.uk',
     telephone: '07706 424469', // Replace
-    email: 'hello@wpwellness.co.uk', // Replace
+    email: 'info@wpwellness.co.uk', // Replace
     image: 'https://wpwellness.co.uk/og-image.jpg',
     logo: 'https://wpwellness.co.uk/logo.png',
     priceRange: '££',
