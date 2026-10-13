@@ -81,7 +81,7 @@ export default function Header() {
               <Clock className="h-6 w-6" />
           </div>
           <div>
-              <p>Mon -Sun: 8am - 8pm</p>
+              <p>Mon: 9am - 6pm, Tue - Fri: 10am - 6pm</p>
           </div>
         </div>
       </div>
