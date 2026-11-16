@@ -25,6 +25,9 @@ const navLinks = [
 
 const servicesLinks = [
     { href: '/services', label: 'View All Services' },
+    { href: '/services/tattoo', label: 'Tattoo Removal' },
+    { href: '/services/hair-removal', label: 'Hair Removal' },
+    { href: '/services/body-contouring', label: 'Body Contouring' },
     { href: '/pricing', label: 'Pricing' },
 ]
 
